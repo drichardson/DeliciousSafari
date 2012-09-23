@@ -1,16 +1,18 @@
-**********************************
-* DeliciousSafari Developer ReadMe
-**********************************
+DeliciousSafari Developer README
+======================================
 
+<pre>
 ./build.sh <short_version>
+</pre>
 Increments the bundle version and builds a DeliciousSafari distribution.
 
+<pre>
 ./dxGenStrings.sh
+</pre>
 Uses the genstrings tool to creates an English language string table. It looks for calls to DXLocalizedString and overwrites the string table English.lproj/Localizable.strings.
 
-***************************
-* DeliciousSafari.xcodeproj
-***************************
+DeliciousSafari.xcodeproj
+---------------------------
 
 DeliciousSafari Target
 Builds the DeliciousSafari bundle.
@@ -25,9 +27,8 @@ ExecuteWithPrivileges
 Builds a tool that can run shell commands as root. Used by the Install DS InputManager target to copy the bundle executable to /Library/InputManagers/...
 
 
-******************
-* String Resources
-******************
+String Resources
+-------------------------
 dxGenStrings.sh is a genstrings wrapper that looks for DXLocalizedString calls. It should be used to update the strings file when new strings are added that should be localized (NOTE: Merging has not been tested yet).
 
 One thing to note is that Xcode opens .strings files as property lists and saves them that way. This is not desired because the comment for the translator is lost. So make sure you open .strings file with TextEdit.
