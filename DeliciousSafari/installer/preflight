@@ -1,0 +1,84 @@
+#!/bin/bash
+
+# Don't rely on PATH being correct. Set it up manually.
+export PATH=/bin:/usr/bin:/usr/sbin
+
+echo "Beginning DeliciousSafari Preflight"
+
+function removeOldDeliciousSafari {
+    # Remove any old versions of DeliciousSafari that used SIMBL for loading.
+    OLD_DELICIOUSSAFARI="$HOME/Library/Application Support/SIMBL/Plugins/DeliciousSafari.bundle"
+    
+    rm -rf "$OLD_DELICIOUSSAFARI"
+    if [ "$?" != 0 ]; then
+        echo "Couldn't remove old DeliciousSafari install at '$OLD_DELICIOUSSAFARI'. Please manually remove it and try the install again."
+        exit 1
+    fi    
+    
+    # Remove any of the newer versions of DeliciousSafari that live in /Library/InputManagers just to insure
+    # the installer will lay down the DeliciousSafari files with the correct permission and ownership set.
+    rm -rf /Library/InputManagers/DeliciousSafari
+    if [ "$?" != 0 ]; then
+        echo "Could not remove current /Library/InputManagers/DeliciousSafari folder before installing the new version."
+        exit 1
+    fi
+}
+
+function fixupPermissionsAndOwnership {
+    #
+    # Make sure /Library/InputManagers has the following permissions/ownership set:
+    # drwxr-xr-x  4 root  admin  136 May 30 21:56 /Library/InputManagers/
+    #
+    chmod 755 /Library/InputManagers
+    if [ "$?" != 0 ]; then
+        echo "Could not set permissions on /Library/InputManagers"
+        exit 1
+    fi
+
+    # Use numeric IDs for root (0) and admin (80) in case user has renamed root user or admin group.
+    chown 0:80 /Library/InputManagers
+    if [ "$?" != 0 ]; then
+        echo "Could not set ownership on /Library/InputManagers"
+        exit 1
+    fi
+    
+    
+    #
+    # Setup /Library/LaunchAgents or else launchd may not start DeliciousSafariAgent
+    #
+    chmod 755 /Library/LaunchAgents
+    if [ "$?" != 0 ]; then
+        echo "Could not set permissions on /Library/LaunchAgents"
+        exit 1
+    fi
+    
+    chown 0:0 /Library/LaunchAgents
+    if [ "$?" != 0 ]; then
+        echo "Could not set ownership on /Library/LaunchAgents"
+        exit 1
+    fi
+}
+
+echo "Removing any existing installations of DeliciousSafari"
+removeOldDeliciousSafari
+
+if [ ! -d /Library/InputManagers ]; then
+    echo "Creating /Library/InputManagers"
+    mkdir -p /Library/InputManagers
+    if [ "$?" != 0 ]; then
+        echo "Could not create /Library/InputManagers"
+        exit 1
+    fi
+fi
+
+echo "Fixing permission and ownership of /Library/InputManagers and /Library/LaunchAgents"
+echo "Was: "
+ls -ldn /Library/InputManagers
+ls -ldn /Library/LaunchAgents
+fixupPermissionsAndOwnership
+echo "Is:  "
+ls -ldn /Library/InputManagers
+ls -ldn /Library/LaunchAgents
+
+echo "Preflight completed successfully"
+exit 0

@@ -1,0 +1,3 @@
+Loading & unloading the launchd plist by hand
+launchctl load -S Aqua /Users/doug/Library/LaunchAgents/com.delicioussafari.DeliciousSafariAgent.plist 
+launchctl unload -S Aqua /Users/doug/Library/LaunchAgents/com.delicioussafari.DeliciousSafariAgent.plist

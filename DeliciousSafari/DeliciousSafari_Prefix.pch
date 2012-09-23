@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Safari Delicious Extension' target in the 'Safari Delicious Extension' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

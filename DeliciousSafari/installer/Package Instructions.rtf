@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf330
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue9;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\vieww19160\viewh15140\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 Basic Checks
+\b0 \
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	1.	}Make sure there are no debug console logs.\
+{\listtext	2.	}Make sure tab key functionality doesn't break when you edit NIBs (this can occur when you recreate a control).\
+{\listtext	3.	}Make sure login and post work.\
+{\listtext	4.	}Test install and basic operation on both case sensitive and insensitive file systems.\
+{\listtext	5.	}Test install and basic operation on all supported platforms (Tiger and Leopard).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs36 \cf0 ReadMe
+\fs24 \
+
+\b0\fs34 Update the Read Me file in the installer.
+\b\fs24 \
+\
+Package Instructions\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf2 NOTE: This instructions are outdated. Now you just need to run ./build.sh from the project directory.\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0 \cf0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls2\ilvl0\cf0 \strike \strikec0 {\listtext	1.	}Increment the version number in the DeliciousSafari bundle.\
+{\listtext	2.	}Build 
+\i DeliciousSafari
+\i0  bundle release mode\
+{\listtext	3.	}Build 
+\i DeliciousSafari Uninstaller
+\i0  in release mode.\
+{\listtext	4.	}Copy DeliciousSafari.bundle to Root/Users/Shared.\
+{\listtext	5.	}Open DeliciousSafariInstaller.pmdoc and build the package. Put the output into the same directory as DeliciousSafariInstaller.pmproj package.\
+{\listtext	6.	}Open DeliciousSafari.pmdoc and build the DeliciousSafari distribution package, putting the output image into a folder named 
+\i DeliciousSafari 1.0
+\i0  (or whatever version you are at).\
+{\listtext	7.	}Copy DMG-Background.png and 
+\i DeliciousSafari Uninstaller
+\i0  into 
+\i DeliciousSafari 1.0
+\i0  (or whatever version you are at).\
+{\listtext	8.	}Create a writable disk image using Disk Utility. Select, from the File menu, New Image from Folder. After you select the folder make sure you select writable image (the default is compressed).\
+{\listtext	9.	}Mount the volume, set the background picture to DMG-Background.png (show view options in Finder), set the icon size to 108x108, set the font size to 14pt. See DMGLayoutReference.png and ViewOptionsReference.png for screenshots.\
+{\listtext	10.	}Run 
+\i SetFile -a V DMG-Background.png
+\i0  from terminal to make DMG-Background.png invisible.\
+{\listtext	11.	}Center the image window where you want it to appear. LEAVE THE WINDOW OPEN!\
+{\listtext	12.	}Unmount the volume and use Disk Utility to convert the image to a compressed format.\strike0\striked0 \
+\pard\tx560\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+The following command was eliminated because it got in the way of controlling the look of the folder in the DMG.\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls3\ilvl0\cf0 {\listtext	1.	}\strike \strikec0 Make the package internet enabled (i.e. will automatically unpack after download) with the following command:\uc0\u8232 
+\f1\fs22 hdiutil internet-enable -yes
+\f0\fs24 \strike0\striked0 \
+\pard\tx560\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx560\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Marketing
+\b0 \
+
+\b \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0
+\b0 \cf0 {\listtext	1.	}Update web site to link to new version. There are two places:\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\ql\qnatural\pardirnatural
+\ls4\ilvl1\cf0 {\listtext	\uc0\u8259 	}Download link\
+{\listtext	\uc0\u8259 	}Version description\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0\cf0 {\listtext	2.	}Update delicioussafari.com/blog\
+{\listtext	3.	}Update apple.com/downloads\
+{\listtext	4.	}Update versiontracker.com\
+{\listtext	5.	}Update macupdate.com\
+{\listtext	6.	}Update macsurfer using MacSurfer Post Script (AppleScript).\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\ql\qnatural\pardirnatural
+\ls4\ilvl1\cf0 {\listtext	\uc0\u8259 	}Copy a new title to the pastboard.\
+{\listtext	\uc0\u8259 	}Set Safari to the web page you want to link to.\
+{\listtext	\uc0\u8259 	}Run the script.\
+\pard\tx220\tx720\tx1120\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0\cf0 {\listtext	7.	}After all the others have updated their links (THIS MAY TAKE DAYS), remove the old DMG so that it isn't downloaded anymore.\
+}

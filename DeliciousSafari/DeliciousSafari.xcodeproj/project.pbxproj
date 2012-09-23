@@ -1,0 +1,1653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		913345FA104B41FE004AD5AD /* all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 91334605104B421D004AD5AD /* Build configuration list for PBXAggregateTarget "all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				919EEDF113E902C90098F974 /* PBXTargetDependency */,
+				916695CE104E22310066F5EC /* PBXTargetDependency */,
+				91334600104B420C004AD5AD /* PBXTargetDependency */,
+				91334604104B4211004AD5AD /* PBXTargetDependency */,
+				91334602104B420E004AD5AD /* PBXTargetDependency */,
+			);
+			name = all;
+			productName = all;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		910059B6106DD75000039D11 /* check-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 910059B5106DD75000039D11 /* check-mark.png */; };
+		9104283F104E20D30082E701 /* libFoundationDataObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91042834104E20510082E701 /* libFoundationDataObjects.a */; };
+		91050B0D0C93C6270047FC30 /* DXFavoritesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 91050B0C0C93C6270047FC30 /* DXFavoritesDataSource.m */; };
+		910577EC106741BC001DA411 /* DXSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 910577EB106741BC001DA411 /* DXSearchResultCell.m */; };
+		910E60AB0DFBC5D40099F18E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 910E60A90DFBC5D40099F18E /* Localizable.strings */; };
+		910EBDAC1061D794002EAD41 /* DXSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910EBDAB1061D794002EAD41 /* DXSearchController.m */; };
+		910F647E106096CE00037FF1 /* DXSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F647D106096CE00037FF1 /* DXSearch.xib */; };
+		9118928D104AEB710012655A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9118928C104AEB710012655A /* Info.plist */; };
+		911892A9104B00050012655A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 911892A8104B00050012655A /* main.c */; };
+		911911CB104B1B70009A4427 /* DeliciousSafari Addition.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 911911CA104B1B70009A4427 /* DeliciousSafari Addition.sdef */; };
+		911A7EF313EDBEC3001FFB79 /* ASHelper in Resources */ = {isa = PBXBuildFile; fileRef = 919EEDE013E902620098F974 /* ASHelper */; };
+		911AE6B80E555D17008F884E /* DXFaviconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 911AE68A0E555B9F008F884E /* DXFaviconDownloader.m */; };
+		91201B07104F8E7A00CA3FE9 /* DSUninstaller-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91201B05104F8E5800CA3FE9 /* DSUninstaller-main.m */; };
+		91201B26104F924D00CA3FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
+		91201B56104F976900CA3FE9 /* DSUninstaller in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91201AFD104F8DE500CA3FE9 /* DSUninstaller */; };
+		91201B8C104F9BDC00CA3FE9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91201B8A104F9BDC00CA3FE9 /* MainMenu.xib */; };
+		91291E340CA22189005C7299 /* LicenseCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = 91291E330CA22189005C7299 /* LicenseCheck.c */; };
+		91291E730CA22842005C7299 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91291E720CA22842005C7299 /* libcrypto.dylib */; };
+		913306760E6517E5006DBDB0 /* DXFaviconDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F15A20E586401007EC254 /* DXFaviconDatabase.m */; };
+		91334590104B3438004AD5AD /* DeliciousSafari Addition.r in Rez */ = {isa = PBXBuildFile; fileRef = 911911A6104B19C2009A4427 /* DeliciousSafari Addition.r */; };
+		91334691104B82BC004AD5AD /* com.delicioussafari.DeliciousSafariAgent.plist in Copy launchd plist */ = {isa = PBXBuildFile; fileRef = 91EEAC14104A4B8800B15A5A /* com.delicioussafari.DeliciousSafariAgent.plist */; };
+		9139D6B90DD94D39002CA42C /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9139D6B80DD94D39002CA42C /* MethodSwizzle.m */; };
+		9139D7200DD95EAB002CA42C /* toolbaritem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9139D71F0DD95EAB002CA42C /* toolbaritem.png */; };
+		913FFA360F6C5EA8003CF6CB /* DXPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 913FFA350F6C5EA8003CF6CB /* DXPreferences.m */; };
+		91442EDE106A0650000A431F /* DXSearchResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91442EDD106A0650000A431F /* DXSearchResultTableView.m */; };
+		91449C8F1049FAA600F3DD5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91449C8E1049FAA600F3DD5C /* main.m */; };
+		91449CB51049FBD700F3DD5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91449CB41049FBD700F3DD5C /* MainMenu.xib */; };
+		91449CC31049FC5000F3DD5C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91449CC21049FC5000F3DD5C /* AppController.m */; };
+		9156A5B610747BBA00204BC3 /* DXTextLimitFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9156A5B510747BBA00204BC3 /* DXTextLimitFormatter.m */; };
+		916695DA104E23080066F5EC /* ExecuteAsRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 916695D7104E23080066F5EC /* ExecuteAsRoot.m */; };
+		916695DB104E23080066F5EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916695D8104E23080066F5EC /* main.m */; };
+		916695DC104E23210066F5EC /* UninstallerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916695D2104E22DA0066F5EC /* UninstallerController.m */; };
+		916695E2104E23570066F5EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916695DE104E23570066F5EC /* InfoPlist.strings */; };
+		916695E7104E23640066F5EC /* Uninstall.icns in Resources */ = {isa = PBXBuildFile; fileRef = 916695E5104E23640066F5EC /* Uninstall.icns */; };
+		916695EC104E23A30066F5EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		916695ED104E23A60066F5EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E356740DF7B92200D115A7 /* Security.framework */; };
+		916695EE104E23A90066F5EC /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E3566B0DF7B8D100D115A7 /* SecurityFoundation.framework */; };
+		916B09E90DBC138D00A0D9C8 /* DXDeliciousAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09E80DBC138D00A0D9C8 /* DXDeliciousAPI.m */; };
+		916B09EC0DBC13C600A0D9C8 /* DXHyperlinkedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09EB0DBC13C600A0D9C8 /* DXHyperlinkedTextField.m */; };
+		916B09F50DBC144800A0D9C8 /* DXDeliciousDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09F40DBC144800A0D9C8 /* DXDeliciousDatabase.m */; };
+		916B09FC0DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09F90DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.m */; };
+		916B09FD0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09FB0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.m */; };
+		916B0A320DBC15C600A0D9C8 /* DXFlowLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B0A310DBC15C600A0D9C8 /* DXFlowLayoutView.m */; };
+		916B237B0DC5353B0042B978 /* DXTagMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B237A0DC5353B0042B978 /* DXTagMenuController.m */; };
+		917924070DE12DC200C75F5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917924060DE12DC200C75F5D /* SystemConfiguration.framework */; };
+		9185035F0CAA12A500026B0D /* DXUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9185035D0CAA12A500026B0D /* DXUtilities.m */; };
+		9186163C0C61B839002E7D23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		918B8127106C70270098A2F5 /* DXExtenderResources.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918B8126106C70270098A2F5 /* DXExtenderResources.xib */; };
+		918CE9E90DD569CE00C582C8 /* DXToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918CE9E80DD569CE00C582C8 /* DXToolbarController.m */; };
+		9193FECE0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193FECD0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m */; };
+		9194B7190DE2857700B66668 /* DXDeliciousAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09E80DBC138D00A0D9C8 /* DXDeliciousAPI.m */; };
+		9194B71B0DE2858400B66668 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917924060DE12DC200C75F5D /* SystemConfiguration.framework */; };
+		9194B72C0DE2858E00B66668 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91291E720CA22842005C7299 /* libcrypto.dylib */; };
+		9194B72F0DE285F500B66668 /* DXDeliciousDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 916B09F40DBC144800A0D9C8 /* DXDeliciousDatabase.m */; };
+		9194B7310DE285FA00B66668 /* DXUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9185035D0CAA12A500026B0D /* DXUtilities.m */; };
+		919A0C371050C1B700870BA7 /* Info in Copy InputManager Info file */ = {isa = PBXBuildFile; fileRef = 919A0C361050C1AF00870BA7 /* Info */; };
+		919EEDE413E902620098F974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919EEDE313E902620098F974 /* Foundation.framework */; };
+		919EEDE713E902620098F974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 919EEDE613E902620098F974 /* main.m */; };
+		91A22DB90D2CC54000BC00CE /* DXSafariBookmarkDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A22DB80D2CC54000BC00CE /* DXSafariBookmarkDataSource.m */; };
+		91A408360C5D1F6300C9E539 /* DXDeliciousExtender.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A408350C5D1F6300C9E539 /* DXDeliciousExtender.m */; };
+		91B05EC40F75B63B002E00D0 /* DXPrincipleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B05EC30F75B63B002E00D0 /* DXPrincipleClass.m */; };
+		91B592FE0C939FB700492D45 /* logo-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B592FD0C939FB700492D45 /* logo-64.png */; };
+		91BCDE8A104F7384005F99B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCDE89104F7384005F99B2 /* libsqlite3.dylib */; };
+		91BCDE8F104F73BC005F99B2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCDE8E104F73BC005F99B2 /* CoreFoundation.framework */; };
+		91BCDE93104F73C4005F99B2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCDE92104F73C4005F99B2 /* Carbon.framework */; };
+		91BF33720C9375EF00917983 /* small-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BF33710C9375EF00917983 /* small-logo.png */; };
+		91C627AC0DBD988C00864591 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C627AB0DBD988C00864591 /* ApplicationServices.framework */; };
+		91D835FC0DDD364E006989A2 /* NSString+DXTruncatedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D835FB0DDD364E006989A2 /* NSString+DXTruncatedStrings.m */; };
+		91E211310C605D9300C45E85 /* DeliciousAPITester_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E2112E0C605D9300C45E85 /* DeliciousAPITester_main.m */; };
+		91E211320C605D9300C45E85 /* DeliciousAPITester-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91E2112F0C605D9300C45E85 /* DeliciousAPITester-Info.plist */; };
+		91E211330C605D9300C45E85 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 91E211300C605D9300C45E85 /* MainMenu.nib */; };
+		91E211420C60606100C45E85 /* TesterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E211410C60606100C45E85 /* TesterController.m */; };
+		91E2BDB30C97D361005D94D4 /* url.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2BDB20C97D361005D94D4 /* url.png */; };
+		91E2D1FE0E25D3850017E99C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E2D1FD0E25D3850017E99C /* libxml2.dylib */; };
+		91E3566C0DF7B8D100D115A7 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E3566B0DF7B8D100D115A7 /* SecurityFoundation.framework */; };
+		91E356750DF7B92200D115A7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E356740DF7B92200D115A7 /* Security.framework */; };
+		91E9E6110D31A98900128875 /* DXButtonIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9E6100D31A98900128875 /* DXButtonIconCell.m */; };
+		91EEAC58104AE10600B15A5A /* SafariController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EEAC57104AE10600B15A5A /* SafariController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91042833104E20510082E701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FoundationDataObjects;
+		};
+		91042835104E20510082E701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 916394090F117B3D008ADF63;
+			remoteInfo = "FDO Unit Tests";
+		};
+		91042837104E20630082E701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FoundationDataObjects;
+		};
+		911A7EF113EDBEB3001FFB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919EEDDF13E902620098F974;
+			remoteInfo = ASHelper;
+		};
+		91201B53104F974300CA3FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91201AFC104F8DE500CA3FE9;
+			remoteInfo = DSUninstaller;
+		};
+		913345FF104B420C004AD5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = DeliciousSafari;
+		};
+		91334601104B420E004AD5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91449C7C1049F77B00F3DD5C;
+			remoteInfo = DeliciousSafariAgent;
+		};
+		91334603104B4211004AD5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9118927C104AE2660012655A;
+			remoteInfo = "DeliciousSafari Addition";
+		};
+		916695CD104E22310066F5EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 916695C6104E22140066F5EC;
+			remoteInfo = "Uninstall DeliciousSafari";
+		};
+		919EEDF013E902C90098F974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919EEDDF13E902620098F974;
+			remoteInfo = ASHelper;
+		};
+		91DBA55A147E201900DB72FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 916D3C6D1473814800BA5243;
+			remoteInfo = FoundationDataObjectsiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91201AB8104F7B7C00CA3FE9 /* Copy InputManager Info file */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Library/InputManagers/DeliciousSafari;
+			dstSubfolderSpec = 0;
+			files = (
+				919A0C371050C1B700870BA7 /* Info in Copy InputManager Info file */,
+			);
+			name = "Copy InputManager Info file";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		91201B67104F97B700CA3FE9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Contents/Support;
+			dstSubfolderSpec = 1;
+			files = (
+				91201B56104F976900CA3FE9 /* DSUninstaller in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9133468E104B827D004AD5AD /* Copy launchd plist */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Library/LaunchAgents;
+			dstSubfolderSpec = 0;
+			files = (
+				91334691104B82BC004AD5AD /* com.delicioussafari.DeliciousSafariAgent.plist in Copy launchd plist */,
+			);
+			name = "Copy launchd plist";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		919EEDDE13E902620098F974 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* DeliciousSafari.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliciousSafari.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910059B5106DD75000039D11 /* check-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-mark.png"; sourceTree = "<group>"; };
+		9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationDataObjects.xcodeproj; path = FoundationDataObjects/FoundationDataObjects.xcodeproj; sourceTree = "<group>"; };
+		91050B0B0C93C6270047FC30 /* DXFavoritesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFavoritesDataSource.h; sourceTree = "<group>"; };
+		91050B0C0C93C6270047FC30 /* DXFavoritesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFavoritesDataSource.m; sourceTree = "<group>"; };
+		910577EA106741BC001DA411 /* DXSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSearchResultCell.h; sourceTree = "<group>"; };
+		910577EB106741BC001DA411 /* DXSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSearchResultCell.m; sourceTree = "<group>"; };
+		910E60AA0DFBC5D40099F18E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		910EBDAA1061D794002EAD41 /* DXSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSearchController.h; sourceTree = "<group>"; };
+		910EBDAB1061D794002EAD41 /* DXSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSearchController.m; sourceTree = "<group>"; };
+		910F647D106096CE00037FF1 /* DXSearch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DXSearch.xib; sourceTree = "<group>"; };
+		9118927D104AE2660012655A /* DeliciousSafari Addition.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeliciousSafari Addition.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9118928C104AEB710012655A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91189299104AFA040012655A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreServices.framework; sourceTree = SDKROOT; };
+		9118929E104AFA080012655A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreFoundation.framework; sourceTree = SDKROOT; };
+		911892A2104AFA140012655A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Carbon.framework; sourceTree = SDKROOT; };
+		911892A8104B00050012655A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9119117A104B17C0009A4427 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Carbon.framework; sourceTree = SDKROOT; };
+		911911A6104B19C2009A4427 /* DeliciousSafari Addition.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = "DeliciousSafari Addition.r"; sourceTree = "<group>"; };
+		911911CA104B1B70009A4427 /* DeliciousSafari Addition.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = "DeliciousSafari Addition.sdef"; sourceTree = "<group>"; };
+		911AE6890E555B9F008F884E /* DXFaviconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFaviconDownloader.h; sourceTree = "<group>"; };
+		911AE68A0E555B9F008F884E /* DXFaviconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFaviconDownloader.m; sourceTree = "<group>"; };
+		91201AFD104F8DE500CA3FE9 /* DSUninstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSUninstaller; sourceTree = BUILT_PRODUCTS_DIR; };
+		91201B05104F8E5800CA3FE9 /* DSUninstaller-main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSUninstaller-main.m"; sourceTree = "<group>"; };
+		91201B8B104F9BDC00CA3FE9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Uninstall/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		91291E330CA22189005C7299 /* LicenseCheck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LicenseCheck.c; sourceTree = "<group>"; };
+		91291E390CA221A1005C7299 /* LicenseCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseCheck.h; sourceTree = "<group>"; };
+		91291E720CA22842005C7299 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		913344D6104B1CDC004AD5AD /* Test Script.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = "Test Script.applescript"; sourceTree = "<group>"; };
+		9139D6B70DD94D0A002CA42C /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		9139D6B80DD94D39002CA42C /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		9139D71F0DD95EAB002CA42C /* toolbaritem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbaritem.png; sourceTree = "<group>"; };
+		913FFA220F6C567A003CF6CB /* DXPreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DXPreferences.xib; sourceTree = "<group>"; };
+		913FFA2B0F6C5B35003CF6CB /* DXPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPreferencesController.h; sourceTree = "<group>"; };
+		913FFA2C0F6C5B35003CF6CB /* DXPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPreferencesController.m; sourceTree = "<group>"; };
+		913FFA340F6C5EA8003CF6CB /* DXPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPreferences.h; sourceTree = "<group>"; };
+		913FFA350F6C5EA8003CF6CB /* DXPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPreferences.m; sourceTree = "<group>"; };
+		91442EDC106A0650000A431F /* DXSearchResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSearchResultTableView.h; sourceTree = "<group>"; };
+		91442EDD106A0650000A431F /* DXSearchResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSearchResultTableView.m; sourceTree = "<group>"; };
+		91449C7D1049F77B00F3DD5C /* DeliciousSafariAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousSafariAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91449C8E1049FAA600F3DD5C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Agent/main.m; sourceTree = "<group>"; };
+		91449CB41049FBD700F3DD5C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Agent/MainMenu.xib; sourceTree = "<group>"; };
+		91449CC11049FC5000F3DD5C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Agent/AppController.h; sourceTree = "<group>"; };
+		91449CC21049FC5000F3DD5C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Agent/AppController.m; sourceTree = "<group>"; };
+		9156A5B410747BBA00204BC3 /* DXTextLimitFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTextLimitFormatter.h; sourceTree = "<group>"; };
+		9156A5B510747BBA00204BC3 /* DXTextLimitFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTextLimitFormatter.m; sourceTree = "<group>"; };
+		916695C7104E22140066F5EC /* Uninstall DeliciousSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uninstall DeliciousSafari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		916695D1104E22DA0066F5EC /* UninstallerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UninstallerController.h; sourceTree = "<group>"; };
+		916695D2104E22DA0066F5EC /* UninstallerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UninstallerController.m; sourceTree = "<group>"; };
+		916695D6104E23080066F5EC /* ExecuteAsRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecuteAsRoot.h; sourceTree = "<group>"; };
+		916695D7104E23080066F5EC /* ExecuteAsRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExecuteAsRoot.m; sourceTree = "<group>"; };
+		916695D8104E23080066F5EC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		916695D9104E23080066F5EC /* Uninstall_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uninstall_Prefix.pch; sourceTree = "<group>"; };
+		916695DF104E23570066F5EC /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		916695E5104E23640066F5EC /* Uninstall.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Uninstall.icns; sourceTree = "<group>"; };
+		916B09E70DBC138D00A0D9C8 /* DXDeliciousAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDeliciousAPI.h; sourceTree = "<group>"; };
+		916B09E80DBC138D00A0D9C8 /* DXDeliciousAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDeliciousAPI.m; sourceTree = "<group>"; };
+		916B09EA0DBC13C600A0D9C8 /* DXHyperlinkedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXHyperlinkedTextField.h; sourceTree = "<group>"; };
+		916B09EB0DBC13C600A0D9C8 /* DXHyperlinkedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXHyperlinkedTextField.m; sourceTree = "<group>"; };
+		916B09F30DBC144800A0D9C8 /* DXDeliciousDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDeliciousDatabase.h; sourceTree = "<group>"; };
+		916B09F40DBC144800A0D9C8 /* DXDeliciousDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDeliciousDatabase.m; sourceTree = "<group>"; };
+		916B09F80DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DXBSJSONAdditions.h"; sourceTree = "<group>"; };
+		916B09F90DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DXBSJSONAdditions.m"; sourceTree = "<group>"; };
+		916B09FA0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+DXBSJSONAdditions.h"; sourceTree = "<group>"; };
+		916B09FB0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+DXBSJSONAdditions.m"; sourceTree = "<group>"; };
+		916B0A300DBC15C600A0D9C8 /* DXFlowLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFlowLayoutView.h; sourceTree = "<group>"; };
+		916B0A310DBC15C600A0D9C8 /* DXFlowLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFlowLayoutView.m; sourceTree = "<group>"; };
+		916B23790DC5353B0042B978 /* DXTagMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTagMenuController.h; sourceTree = "<group>"; };
+		916B237A0DC5353B0042B978 /* DXTagMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTagMenuController.m; sourceTree = "<group>"; };
+		917924060DE12DC200C75F5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		917F15A10E586401007EC254 /* DXFaviconDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXFaviconDatabase.h; sourceTree = "<group>"; };
+		917F15A20E586401007EC254 /* DXFaviconDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXFaviconDatabase.m; sourceTree = "<group>"; };
+		9185035C0CAA12A500026B0D /* DXUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXUtilities.h; sourceTree = "<group>"; };
+		9185035D0CAA12A500026B0D /* DXUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXUtilities.m; sourceTree = "<group>"; };
+		918B8126106C70270098A2F5 /* DXExtenderResources.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DXExtenderResources.xib; sourceTree = "<group>"; };
+		918CE9E70DD569CE00C582C8 /* DXToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXToolbarController.h; sourceTree = "<group>"; };
+		918CE9E80DD569CE00C582C8 /* DXToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXToolbarController.m; sourceTree = "<group>"; };
+		9193FECC0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDeliciousMenuItem.h; sourceTree = "<group>"; };
+		9193FECD0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDeliciousMenuItem.m; sourceTree = "<group>"; };
+		9194B7040DE283E100B66668 /* DeliciousSafari_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliciousSafari_Prefix.pch; sourceTree = "<group>"; };
+		919A0C361050C1AF00870BA7 /* Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info; sourceTree = "<group>"; };
+		919EEDE013E902620098F974 /* ASHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ASHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		919EEDE313E902620098F974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		919EEDE613E902620098F974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91A220790F6A208A00DD6221 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libsqlite3.dylib; sourceTree = SDKROOT; };
+		91A22DB70D2CC54000BC00CE /* DXSafariBookmarkDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXSafariBookmarkDataSource.h; sourceTree = "<group>"; };
+		91A22DB80D2CC54000BC00CE /* DXSafariBookmarkDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXSafariBookmarkDataSource.m; sourceTree = "<group>"; };
+		91A408340C5D1F6300C9E539 /* DXDeliciousExtender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDeliciousExtender.h; sourceTree = "<group>"; };
+		91A408350C5D1F6300C9E539 /* DXDeliciousExtender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDeliciousExtender.m; sourceTree = "<group>"; };
+		91B05EC20F75B63B002E00D0 /* DXPrincipleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPrincipleClass.h; sourceTree = "<group>"; };
+		91B05EC30F75B63B002E00D0 /* DXPrincipleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPrincipleClass.m; sourceTree = "<group>"; };
+		91B592FD0C939FB700492D45 /* logo-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-64.png"; sourceTree = "<group>"; };
+		91BCDE89104F7384005F99B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		91BCDE8E104F73BC005F99B2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		91BCDE92104F73C4005F99B2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		91BF33710C9375EF00917983 /* small-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-logo.png"; sourceTree = "<group>"; };
+		91C627AB0DBD988C00864591 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		91D835FA0DDD364E006989A2 /* NSString+DXTruncatedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DXTruncatedStrings.h"; sourceTree = "<group>"; };
+		91D835FB0DDD364E006989A2 /* NSString+DXTruncatedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DXTruncatedStrings.m"; sourceTree = "<group>"; };
+		91DD69EF0C605B63002C8D34 /* DeliciousAPITester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousAPITester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E2112E0C605D9300C45E85 /* DeliciousAPITester_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DeliciousAPITester_main.m; path = DeliciousAPITester/DeliciousAPITester_main.m; sourceTree = "<group>"; };
+		91E2112F0C605D9300C45E85 /* DeliciousAPITester-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "DeliciousAPITester-Info.plist"; path = "DeliciousAPITester/DeliciousAPITester-Info.plist"; sourceTree = "<group>"; };
+		91E211300C605D9300C45E85 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = DeliciousAPITester/MainMenu.nib; sourceTree = "<group>"; };
+		91E211400C60606100C45E85 /* TesterController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TesterController.h; path = DeliciousAPITester/TesterController.h; sourceTree = "<group>"; };
+		91E211410C60606100C45E85 /* TesterController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TesterController.m; path = DeliciousAPITester/TesterController.m; sourceTree = "<group>"; };
+		91E2BDB20C97D361005D94D4 /* url.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = url.png; sourceTree = "<group>"; };
+		91E2D1FD0E25D3850017E99C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		91E3566B0DF7B8D100D115A7 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = /System/Library/Frameworks/SecurityFoundation.framework; sourceTree = "<absolute>"; };
+		91E356740DF7B92200D115A7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		91E9E60F0D31A98900128875 /* DXButtonIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXButtonIconCell.h; sourceTree = "<group>"; };
+		91E9E6100D31A98900128875 /* DXButtonIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXButtonIconCell.m; sourceTree = "<group>"; };
+		91EEAB761049FCE800B15A5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Agent/Info.plist; sourceTree = "<group>"; };
+		91EEAC14104A4B8800B15A5A /* com.delicioussafari.DeliciousSafariAgent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = com.delicioussafari.DeliciousSafariAgent.plist; path = Agent/com.delicioussafari.DeliciousSafariAgent.plist; sourceTree = "<group>"; };
+		91EEAC56104AE10600B15A5A /* SafariController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SafariController.h; path = Agent/SafariController.h; sourceTree = "<group>"; };
+		91EEAC57104AE10600B15A5A /* SafariController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SafariController.m; path = Agent/SafariController.m; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104283F104E20D30082E701 /* libFoundationDataObjects.a in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				91291E730CA22842005C7299 /* libcrypto.dylib in Frameworks */,
+				91C627AC0DBD988C00864591 /* ApplicationServices.framework in Frameworks */,
+				917924070DE12DC200C75F5D /* SystemConfiguration.framework in Frameworks */,
+				91E3566C0DF7B8D100D115A7 /* SecurityFoundation.framework in Frameworks */,
+				91E356750DF7B92200D115A7 /* Security.framework in Frameworks */,
+				91E2D1FE0E25D3850017E99C /* libxml2.dylib in Frameworks */,
+				91BCDE8A104F7384005F99B2 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9118927B104AE2660012655A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BCDE8F104F73BC005F99B2 /* CoreFoundation.framework in Frameworks */,
+				91BCDE93104F73C4005F99B2 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91201AFB104F8DE500CA3FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91201B26104F924D00CA3FE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91449C7B1049F77B00F3DD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916695C5104E22140066F5EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916695EC104E23A30066F5EC /* Cocoa.framework in Frameworks */,
+				916695ED104E23A60066F5EC /* Security.framework in Frameworks */,
+				916695EE104E23A90066F5EC /* SecurityFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919EEDDD13E902620098F974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919EEDE413E902620098F974 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD69ED0C605B63002C8D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9194B72C0DE2858E00B66668 /* libcrypto.dylib in Frameworks */,
+				9194B71B0DE2858400B66668 /* SystemConfiguration.framework in Frameworks */,
+				9186163C0C61B839002E7D23 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Safari Delicious Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91449C871049FA0D00F3DD5C /* Agent */,
+				08FB77AFFE84173DC02AAC07 /* Plugin */,
+				91189283104AE26E0012655A /* Scripting Addition */,
+				916695CF104E22AA0066F5EC /* Uninstall */,
+				91DD694A0C60436D002C8D34 /* DeliciousAPITester */,
+				919EEDE513E902620098F974 /* ASHelper */,
+				919EEDE213E902620098F974 /* Frameworks */,
+				91DD69F00C605B63002C8D34 /* Products */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */,
+			);
+			name = "Safari Delicious Extension";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				910E60A90DFBC5D40099F18E /* Localizable.strings */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				918B8126106C70270098A2F5 /* DXExtenderResources.xib */,
+				913FFA220F6C567A003CF6CB /* DXPreferences.xib */,
+				910F647D106096CE00037FF1 /* DXSearch.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				91468D390D42BF9400A80B36 /* BSJSONAdditions */,
+				91DD693F0C604346002C8D34 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				91BF33710C9375EF00917983 /* small-logo.png */,
+				91B592FD0C939FB700492D45 /* logo-64.png */,
+				9139D71F0DD95EAB002CA42C /* toolbaritem.png */,
+				91E2BDB20C97D361005D94D4 /* url.png */,
+				919A0C361050C1AF00870BA7 /* Info */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BCDE89104F7384005F99B2 /* libsqlite3.dylib */,
+				91BCDE8E104F73BC005F99B2 /* CoreFoundation.framework */,
+				91BCDE92104F73C4005F99B2 /* Carbon.framework */,
+				91E2D1FD0E25D3850017E99C /* libxml2.dylib */,
+				91A220790F6A208A00DD6221 /* libsqlite3.dylib */,
+				91189299104AFA040012655A /* CoreServices.framework */,
+				9118929E104AFA080012655A /* CoreFoundation.framework */,
+				911892A2104AFA140012655A /* Carbon.framework */,
+				9119117A104B17C0009A4427 /* Carbon.framework */,
+				91E356740DF7B92200D115A7 /* Security.framework */,
+				91E3566B0DF7B8D100D115A7 /* SecurityFoundation.framework */,
+				91C627AB0DBD988C00864591 /* ApplicationServices.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				91291E720CA22842005C7299 /* libcrypto.dylib */,
+				917924060DE12DC200C75F5D /* SystemConfiguration.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9194B7040DE283E100B66668 /* DeliciousSafari_Prefix.pch */,
+				91291E330CA22189005C7299 /* LicenseCheck.c */,
+				91291E390CA221A1005C7299 /* LicenseCheck.h */,
+				9139D6B70DD94D0A002CA42C /* MethodSwizzle.h */,
+				9139D6B80DD94D39002CA42C /* MethodSwizzle.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		9104282C104E20510082E701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91042834104E20510082E701 /* libFoundationDataObjects.a */,
+				91042836104E20510082E701 /* FDO Unit Tests.octest */,
+				91DBA55B147E201900DB72FE /* libFoundationDataObjectsiOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910EBDBB1061D7D8002EAD41 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				91442EDC106A0650000A431F /* DXSearchResultTableView.h */,
+				91442EDD106A0650000A431F /* DXSearchResultTableView.m */,
+				910EBDAA1061D794002EAD41 /* DXSearchController.h */,
+				910EBDAB1061D794002EAD41 /* DXSearchController.m */,
+				910577EA106741BC001DA411 /* DXSearchResultCell.h */,
+				910577EB106741BC001DA411 /* DXSearchResultCell.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		9118923F104AE1B80012655A /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				91449C8E1049FAA600F3DD5C /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		91189283104AE26E0012655A /* Scripting Addition */ = {
+			isa = PBXGroup;
+			children = (
+				911892A8104B00050012655A /* main.c */,
+				911911CA104B1B70009A4427 /* DeliciousSafari Addition.sdef */,
+				9118928C104AEB710012655A /* Info.plist */,
+				913344D6104B1CDC004AD5AD /* Test Script.applescript */,
+				911911A6104B19C2009A4427 /* DeliciousSafari Addition.r */,
+			);
+			path = "Scripting Addition";
+			sourceTree = "<group>";
+		};
+		91201B01104F8DF600CA3FE9 /* DSUninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				91201B05104F8E5800CA3FE9 /* DSUninstaller-main.m */,
+			);
+			name = DSUninstaller;
+			sourceTree = "<group>";
+		};
+		91449C871049FA0D00F3DD5C /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				91EEABA5104A422A00B15A5A /* Classes */,
+				9118923F104AE1B80012655A /* Other Sources */,
+				91449CA91049FB3400F3DD5C /* Resources */,
+			);
+			name = Agent;
+			sourceTree = "<group>";
+		};
+		91449CA91049FB3400F3DD5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91EEAC14104A4B8800B15A5A /* com.delicioussafari.DeliciousSafariAgent.plist */,
+				91EEAB761049FCE800B15A5A /* Info.plist */,
+				91449CB41049FBD700F3DD5C /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		91468D390D42BF9400A80B36 /* BSJSONAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				916B09F80DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.h */,
+				916B09F90DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.m */,
+				916B09FA0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.h */,
+				916B09FB0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.m */,
+			);
+			name = BSJSONAdditions;
+			sourceTree = "<group>";
+		};
+		916695CF104E22AA0066F5EC /* Uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				91201B01104F8DF600CA3FE9 /* DSUninstaller */,
+				916695D0104E22BB0066F5EC /* Classes */,
+				916695D4104E22E80066F5EC /* Other Sources */,
+				916695DD104E23310066F5EC /* Resources */,
+			);
+			path = Uninstall;
+			sourceTree = "<group>";
+		};
+		916695D0104E22BB0066F5EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				916695D1104E22DA0066F5EC /* UninstallerController.h */,
+				916695D2104E22DA0066F5EC /* UninstallerController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		916695D4104E22E80066F5EC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				916695D6104E23080066F5EC /* ExecuteAsRoot.h */,
+				916695D7104E23080066F5EC /* ExecuteAsRoot.m */,
+				916695D8104E23080066F5EC /* main.m */,
+				916695D9104E23080066F5EC /* Uninstall_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		916695DD104E23310066F5EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				910059B5106DD75000039D11 /* check-mark.png */,
+				91201B8A104F9BDC00CA3FE9 /* MainMenu.xib */,
+				916695E5104E23640066F5EC /* Uninstall.icns */,
+				916695DE104E23570066F5EC /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		919EEDE213E902620098F974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919EEDE313E902620098F974 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		919EEDE513E902620098F974 /* ASHelper */ = {
+			isa = PBXGroup;
+			children = (
+				919EEDE613E902620098F974 /* main.m */,
+			);
+			path = ASHelper;
+			sourceTree = "<group>";
+		};
+		91DD693F0C604346002C8D34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				910EBDBB1061D7D8002EAD41 /* Search */,
+				91E9E60F0D31A98900128875 /* DXButtonIconCell.h */,
+				91E9E6100D31A98900128875 /* DXButtonIconCell.m */,
+				916B09E70DBC138D00A0D9C8 /* DXDeliciousAPI.h */,
+				916B09E80DBC138D00A0D9C8 /* DXDeliciousAPI.m */,
+				916B09F30DBC144800A0D9C8 /* DXDeliciousDatabase.h */,
+				916B09F40DBC144800A0D9C8 /* DXDeliciousDatabase.m */,
+				91A408340C5D1F6300C9E539 /* DXDeliciousExtender.h */,
+				91A408350C5D1F6300C9E539 /* DXDeliciousExtender.m */,
+				9193FECC0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.h */,
+				9193FECD0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m */,
+				917F15A10E586401007EC254 /* DXFaviconDatabase.h */,
+				917F15A20E586401007EC254 /* DXFaviconDatabase.m */,
+				911AE6890E555B9F008F884E /* DXFaviconDownloader.h */,
+				911AE68A0E555B9F008F884E /* DXFaviconDownloader.m */,
+				91050B0B0C93C6270047FC30 /* DXFavoritesDataSource.h */,
+				91050B0C0C93C6270047FC30 /* DXFavoritesDataSource.m */,
+				916B0A300DBC15C600A0D9C8 /* DXFlowLayoutView.h */,
+				916B0A310DBC15C600A0D9C8 /* DXFlowLayoutView.m */,
+				916B09EA0DBC13C600A0D9C8 /* DXHyperlinkedTextField.h */,
+				916B09EB0DBC13C600A0D9C8 /* DXHyperlinkedTextField.m */,
+				91B05EC20F75B63B002E00D0 /* DXPrincipleClass.h */,
+				91B05EC30F75B63B002E00D0 /* DXPrincipleClass.m */,
+				913FFA340F6C5EA8003CF6CB /* DXPreferences.h */,
+				913FFA350F6C5EA8003CF6CB /* DXPreferences.m */,
+				913FFA2B0F6C5B35003CF6CB /* DXPreferencesController.h */,
+				913FFA2C0F6C5B35003CF6CB /* DXPreferencesController.m */,
+				91A22DB70D2CC54000BC00CE /* DXSafariBookmarkDataSource.h */,
+				91A22DB80D2CC54000BC00CE /* DXSafariBookmarkDataSource.m */,
+				916B23790DC5353B0042B978 /* DXTagMenuController.h */,
+				916B237A0DC5353B0042B978 /* DXTagMenuController.m */,
+				9156A5B410747BBA00204BC3 /* DXTextLimitFormatter.h */,
+				9156A5B510747BBA00204BC3 /* DXTextLimitFormatter.m */,
+				918CE9E70DD569CE00C582C8 /* DXToolbarController.h */,
+				918CE9E80DD569CE00C582C8 /* DXToolbarController.m */,
+				9185035C0CAA12A500026B0D /* DXUtilities.h */,
+				9185035D0CAA12A500026B0D /* DXUtilities.m */,
+				91D835FA0DDD364E006989A2 /* NSString+DXTruncatedStrings.h */,
+				91D835FB0DDD364E006989A2 /* NSString+DXTruncatedStrings.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		91DD694A0C60436D002C8D34 /* DeliciousAPITester */ = {
+			isa = PBXGroup;
+			children = (
+				91E2112E0C605D9300C45E85 /* DeliciousAPITester_main.m */,
+				91E2112F0C605D9300C45E85 /* DeliciousAPITester-Info.plist */,
+				91E211300C605D9300C45E85 /* MainMenu.nib */,
+				91E211400C60606100C45E85 /* TesterController.h */,
+				91E211410C60606100C45E85 /* TesterController.m */,
+			);
+			name = DeliciousAPITester;
+			sourceTree = "<group>";
+		};
+		91DD69F00C605B63002C8D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* DeliciousSafari.bundle */,
+				91DD69EF0C605B63002C8D34 /* DeliciousAPITester.app */,
+				91449C7D1049F77B00F3DD5C /* DeliciousSafariAgent.app */,
+				9118927D104AE2660012655A /* DeliciousSafari Addition.osax */,
+				916695C7104E22140066F5EC /* Uninstall DeliciousSafari.app */,
+				91201AFD104F8DE500CA3FE9 /* DSUninstaller */,
+				919EEDE013E902620098F974 /* ASHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91EEABA5104A422A00B15A5A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91449CC11049FC5000F3DD5C /* AppController.h */,
+				91449CC21049FC5000F3DD5C /* AppController.m */,
+				91EEAC56104AE10600B15A5A /* SafariController.h */,
+				91EEAC57104AE10600B15A5A /* SafariController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* DeliciousSafari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "DeliciousSafari" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				91201AB8104F7B7C00CA3FE9 /* Copy InputManager Info file */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				911A7EF213EDBEB3001FFB79 /* PBXTargetDependency */,
+				91042838104E20630082E701 /* PBXTargetDependency */,
+			);
+			name = DeliciousSafari;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "Safari Delicious Extension";
+			productReference = 8D5B49B6048680CD000E48DA /* DeliciousSafari.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9118927C104AE2660012655A /* DeliciousSafari Addition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91189281104AE2670012655A /* Build configuration list for PBXNativeTarget "DeliciousSafari Addition" */;
+			buildPhases = (
+				91189279104AE2660012655A /* Resources */,
+				91191181104B17E2009A4427 /* ShellScript */,
+				9118927A104AE2660012655A /* Sources */,
+				9118927B104AE2660012655A /* Frameworks */,
+				91334593104B343F004AD5AD /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeliciousSafari Addition";
+			productName = "DeliciousSafari Addition";
+			productReference = 9118927D104AE2660012655A /* DeliciousSafari Addition.osax */;
+			productType = "com.apple.product-type.bundle";
+		};
+		91201AFC104F8DE500CA3FE9 /* DSUninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91201B02104F8DF600CA3FE9 /* Build configuration list for PBXNativeTarget "DSUninstaller" */;
+			buildPhases = (
+				91201AFA104F8DE500CA3FE9 /* Sources */,
+				91201AFB104F8DE500CA3FE9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSUninstaller;
+			productName = DSUninstaller;
+			productReference = 91201AFD104F8DE500CA3FE9 /* DSUninstaller */;
+			productType = "com.apple.product-type.tool";
+		};
+		91449C7C1049F77B00F3DD5C /* DeliciousSafariAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91449C821049F77D00F3DD5C /* Build configuration list for PBXNativeTarget "DeliciousSafariAgent" */;
+			buildPhases = (
+				91449C791049F77B00F3DD5C /* Resources */,
+				91449C7A1049F77B00F3DD5C /* Sources */,
+				91449C7B1049F77B00F3DD5C /* Frameworks */,
+				9133468E104B827D004AD5AD /* Copy launchd plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliciousSafariAgent;
+			productName = DeliciousSafariAgent;
+			productReference = 91449C7D1049F77B00F3DD5C /* DeliciousSafariAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		916695C6104E22140066F5EC /* Uninstall DeliciousSafari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916695CC104E22150066F5EC /* Build configuration list for PBXNativeTarget "Uninstall DeliciousSafari" */;
+			buildPhases = (
+				916695C3104E22140066F5EC /* Resources */,
+				916695C4104E22140066F5EC /* Sources */,
+				916695C5104E22140066F5EC /* Frameworks */,
+				91201B67104F97B700CA3FE9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91201B54104F974300CA3FE9 /* PBXTargetDependency */,
+			);
+			name = "Uninstall DeliciousSafari";
+			productName = "Uninstall DeliciousSafari";
+			productReference = 916695C7104E22140066F5EC /* Uninstall DeliciousSafari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		919EEDDF13E902620098F974 /* ASHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919EEDEC13E902620098F974 /* Build configuration list for PBXNativeTarget "ASHelper" */;
+			buildPhases = (
+				919EEDDC13E902620098F974 /* Sources */,
+				919EEDDD13E902620098F974 /* Frameworks */,
+				919EEDDE13E902620098F974 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASHelper;
+			productName = ASHelper;
+			productReference = 919EEDE013E902620098F974 /* ASHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		91DD69EE0C605B63002C8D34 /* DeliciousAPITester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DD69F30C605B63002C8D34 /* Build configuration list for PBXNativeTarget "DeliciousAPITester" */;
+			buildPhases = (
+				91DD69EB0C605B63002C8D34 /* Resources */,
+				91DD69EC0C605B63002C8D34 /* Sources */,
+				91DD69ED0C605B63002C8D34 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliciousAPITester;
+			productName = DeliciousAPITester;
+			productReference = 91DD69EF0C605B63002C8D34 /* DeliciousAPITester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "DeliciousSafari" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Safari Delicious Extension */;
+			productRefGroup = 91DD69F00C605B63002C8D34 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9104282C104E20510082E701 /* Products */;
+					ProjectRef = 9104282B104E20510082E701 /* FoundationDataObjects.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				913345FA104B41FE004AD5AD /* all */,
+				8D5B49AC048680CD000E48DA /* DeliciousSafari */,
+				91449C7C1049F77B00F3DD5C /* DeliciousSafariAgent */,
+				9118927C104AE2660012655A /* DeliciousSafari Addition */,
+				91DD69EE0C605B63002C8D34 /* DeliciousAPITester */,
+				916695C6104E22140066F5EC /* Uninstall DeliciousSafari */,
+				91201AFC104F8DE500CA3FE9 /* DSUninstaller */,
+				919EEDDF13E902620098F974 /* ASHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		91042834104E20510082E701 /* libFoundationDataObjects.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationDataObjects.a;
+			remoteRef = 91042833104E20510082E701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91042836104E20510082E701 /* FDO Unit Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDO Unit Tests.octest";
+			remoteRef = 91042835104E20510082E701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91DBA55B147E201900DB72FE /* libFoundationDataObjectsiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationDataObjectsiOS.a;
+			remoteRef = 91DBA55A147E201900DB72FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A7EF313EDBEC3001FFB79 /* ASHelper in Resources */,
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				91BF33720C9375EF00917983 /* small-logo.png in Resources */,
+				91B592FE0C939FB700492D45 /* logo-64.png in Resources */,
+				91E2BDB30C97D361005D94D4 /* url.png in Resources */,
+				9139D7200DD95EAB002CA42C /* toolbaritem.png in Resources */,
+				910E60AB0DFBC5D40099F18E /* Localizable.strings in Resources */,
+				910F647E106096CE00037FF1 /* DXSearch.xib in Resources */,
+				918B8127106C70270098A2F5 /* DXExtenderResources.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91189279104AE2660012655A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911911CB104B1B70009A4427 /* DeliciousSafari Addition.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91449C791049F77B00F3DD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91449CB51049FBD700F3DD5C /* MainMenu.xib in Resources */,
+				9118928D104AEB710012655A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916695C3104E22140066F5EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916695E2104E23570066F5EC /* InfoPlist.strings in Resources */,
+				916695E7104E23640066F5EC /* Uninstall.icns in Resources */,
+				91201B8C104F9BDC00CA3FE9 /* MainMenu.xib in Resources */,
+				910059B6106DD75000039D11 /* check-mark.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD69EB0C605B63002C8D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E211320C605D9300C45E85 /* DeliciousAPITester-Info.plist in Resources */,
+				91E211330C605D9300C45E85 /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		91334593104B343F004AD5AD /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91334590104B3438004AD5AD /* DeliciousSafari Addition.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91191181104B17E2009A4427 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"Scripting Addition/DeliciousSafari Addition.sdef",
+			);
+			outputPaths = (
+				"Scripting Addition/DeliciousSafari Addition.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This rule builds an 'aete' version of the sdef; it is only necessary for pre-Leopard builds.\n/usr/bin/sdp -fa -o \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.r\" \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.sdef\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9193FECE0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m in Sources */,
+				91A408360C5D1F6300C9E539 /* DXDeliciousExtender.m in Sources */,
+				91050B0D0C93C6270047FC30 /* DXFavoritesDataSource.m in Sources */,
+				91291E340CA22189005C7299 /* LicenseCheck.c in Sources */,
+				9185035F0CAA12A500026B0D /* DXUtilities.m in Sources */,
+				91A22DB90D2CC54000BC00CE /* DXSafariBookmarkDataSource.m in Sources */,
+				91E9E6110D31A98900128875 /* DXButtonIconCell.m in Sources */,
+				916B09E90DBC138D00A0D9C8 /* DXDeliciousAPI.m in Sources */,
+				916B09EC0DBC13C600A0D9C8 /* DXHyperlinkedTextField.m in Sources */,
+				916B09F50DBC144800A0D9C8 /* DXDeliciousDatabase.m in Sources */,
+				916B09FC0DBC149B00A0D9C8 /* NSDictionary+DXBSJSONAdditions.m in Sources */,
+				916B09FD0DBC149B00A0D9C8 /* NSScanner+DXBSJSONAdditions.m in Sources */,
+				916B0A320DBC15C600A0D9C8 /* DXFlowLayoutView.m in Sources */,
+				916B237B0DC5353B0042B978 /* DXTagMenuController.m in Sources */,
+				918CE9E90DD569CE00C582C8 /* DXToolbarController.m in Sources */,
+				9139D6B90DD94D39002CA42C /* MethodSwizzle.m in Sources */,
+				91D835FC0DDD364E006989A2 /* NSString+DXTruncatedStrings.m in Sources */,
+				911AE6B80E555D17008F884E /* DXFaviconDownloader.m in Sources */,
+				913306760E6517E5006DBDB0 /* DXFaviconDatabase.m in Sources */,
+				913FFA360F6C5EA8003CF6CB /* DXPreferences.m in Sources */,
+				91B05EC40F75B63B002E00D0 /* DXPrincipleClass.m in Sources */,
+				910EBDAC1061D794002EAD41 /* DXSearchController.m in Sources */,
+				910577EC106741BC001DA411 /* DXSearchResultCell.m in Sources */,
+				91442EDE106A0650000A431F /* DXSearchResultTableView.m in Sources */,
+				9156A5B610747BBA00204BC3 /* DXTextLimitFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9118927A104AE2660012655A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911892A9104B00050012655A /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91201AFA104F8DE500CA3FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91201B07104F8E7A00CA3FE9 /* DSUninstaller-main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91449C7A1049F77B00F3DD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91449C8F1049FAA600F3DD5C /* main.m in Sources */,
+				91449CC31049FC5000F3DD5C /* AppController.m in Sources */,
+				91EEAC58104AE10600B15A5A /* SafariController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916695C4104E22140066F5EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916695DA104E23080066F5EC /* ExecuteAsRoot.m in Sources */,
+				916695DB104E23080066F5EC /* main.m in Sources */,
+				916695DC104E23210066F5EC /* UninstallerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919EEDDC13E902620098F974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919EEDE713E902620098F974 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DD69EC0C605B63002C8D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9194B7310DE285FA00B66668 /* DXUtilities.m in Sources */,
+				9194B72F0DE285F500B66668 /* DXDeliciousDatabase.m in Sources */,
+				9194B7190DE2857700B66668 /* DXDeliciousAPI.m in Sources */,
+				91E211310C605D9300C45E85 /* DeliciousAPITester_main.m in Sources */,
+				91E211420C60606100C45E85 /* TesterController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91042838104E20630082E701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoundationDataObjects;
+			targetProxy = 91042837104E20630082E701 /* PBXContainerItemProxy */;
+		};
+		911A7EF213EDBEB3001FFB79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919EEDDF13E902620098F974 /* ASHelper */;
+			targetProxy = 911A7EF113EDBEB3001FFB79 /* PBXContainerItemProxy */;
+		};
+		91201B54104F974300CA3FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91201AFC104F8DE500CA3FE9 /* DSUninstaller */;
+			targetProxy = 91201B53104F974300CA3FE9 /* PBXContainerItemProxy */;
+		};
+		91334600104B420C004AD5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5B49AC048680CD000E48DA /* DeliciousSafari */;
+			targetProxy = 913345FF104B420C004AD5AD /* PBXContainerItemProxy */;
+		};
+		91334602104B420E004AD5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91449C7C1049F77B00F3DD5C /* DeliciousSafariAgent */;
+			targetProxy = 91334601104B420E004AD5AD /* PBXContainerItemProxy */;
+		};
+		91334604104B4211004AD5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9118927C104AE2660012655A /* DeliciousSafari Addition */;
+			targetProxy = 91334603104B4211004AD5AD /* PBXContainerItemProxy */;
+		};
+		916695CE104E22310066F5EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 916695C6104E22140066F5EC /* Uninstall DeliciousSafari */;
+			targetProxy = 916695CD104E22310066F5EC /* PBXContainerItemProxy */;
+		};
+		919EEDF113E902C90098F974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919EEDDF13E902620098F974 /* ASHelper */;
+			targetProxy = 919EEDF013E902C90098F974 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		910E60A90DFBC5D40099F18E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910E60AA0DFBC5D40099F18E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		91201B8A104F9BDC00CA3FE9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91201B8B104F9BDC00CA3FE9 /* English */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		916695DE104E23570066F5EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				916695DF104E23570066F5EC /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 132;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DeliciousSafari_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_PLUGIN_TARGET=1";
+				HEADER_SEARCH_PATHS = (
+					FoundationDataObjects/Source,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/InputManagers/DeliciousSafari;
+				PRODUCT_NAME = DeliciousSafari;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 132;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DeliciousSafari_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_PLUGIN_TARGET=1";
+				HEADER_SEARCH_PATHS = (
+					FoundationDataObjects/Source,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/InputManagers/DeliciousSafari;
+				PRODUCT_NAME = DeliciousSafari;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		9118927F104AE2670012655A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "Scripting Addition/Info.plist";
+				INSTALL_PATH = /Library/ScriptingAdditions;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "DeliciousSafari Addition";
+				WRAPPER_EXTENSION = osax;
+			};
+			name = Debug;
+		};
+		91189280104AE2670012655A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "Scripting Addition/Info.plist";
+				INSTALL_PATH = /Library/ScriptingAdditions;
+				PRODUCT_NAME = "DeliciousSafari Addition";
+				WRAPPER_EXTENSION = osax;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		91201AFF104F8DE600CA3FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				PRODUCT_NAME = DSUninstaller;
+			};
+			name = Debug;
+		};
+		91201B00104F8DE600CA3FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				PRODUCT_NAME = DSUninstaller;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		913345FB104B41FE004AD5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = all;
+			};
+			name = Debug;
+		};
+		913345FC104B41FE004AD5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = all;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		91449C801049F77D00F3DD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Agent/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/DeliciousSafari";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DeliciousSafariAgent;
+			};
+			name = Debug;
+		};
+		91449C811049F77D00F3DD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Agent/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/DeliciousSafari";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DeliciousSafariAgent;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		916695CA104E22150066F5EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Uninstall/Info.plist;
+				INSTALL_PATH = /Applications;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "Uninstall DeliciousSafari";
+			};
+			name = Debug;
+		};
+		916695CB104E22150066F5EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Uninstall/Info.plist;
+				INSTALL_PATH = /Applications;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "Uninstall DeliciousSafari";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		919EEDED13E902620098F974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		919EEDEE13E902620098F974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		91DD69F40C605B63002C8D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "DeliciousAPITester/DeliciousAPITester-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DeliciousAPITester;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		91DD69F50C605B63002C8D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "DeliciousAPITester/DeliciousAPITester-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DeliciousAPITester;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "DeliciousSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "DeliciousSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91189281104AE2670012655A /* Build configuration list for PBXNativeTarget "DeliciousSafari Addition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9118927F104AE2670012655A /* Debug */,
+				91189280104AE2670012655A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91201B02104F8DF600CA3FE9 /* Build configuration list for PBXNativeTarget "DSUninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91201AFF104F8DE600CA3FE9 /* Debug */,
+				91201B00104F8DE600CA3FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91334605104B421D004AD5AD /* Build configuration list for PBXAggregateTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913345FB104B41FE004AD5AD /* Debug */,
+				913345FC104B41FE004AD5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91449C821049F77D00F3DD5C /* Build configuration list for PBXNativeTarget "DeliciousSafariAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91449C801049F77D00F3DD5C /* Debug */,
+				91449C811049F77D00F3DD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916695CC104E22150066F5EC /* Build configuration list for PBXNativeTarget "Uninstall DeliciousSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916695CA104E22150066F5EC /* Debug */,
+				916695CB104E22150066F5EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919EEDEC13E902620098F974 /* Build configuration list for PBXNativeTarget "ASHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919EEDED13E902620098F974 /* Debug */,
+				919EEDEE13E902620098F974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91DD69F30C605B63002C8D34 /* Build configuration list for PBXNativeTarget "DeliciousAPITester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DD69F40C605B63002C8D34 /* Debug */,
+				91DD69F50C605B63002C8D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

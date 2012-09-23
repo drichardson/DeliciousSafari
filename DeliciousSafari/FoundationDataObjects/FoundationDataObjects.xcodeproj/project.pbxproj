@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		916393B60F115E13008ADF63 /* FDOConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393B40F115E13008ADF63 /* FDOConnection.h */; settings = {ATTRIBUTES = (); }; };
+		916393B70F115E13008ADF63 /* FDOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393B50F115E13008ADF63 /* FDOConnection.m */; };
+		916393CE0F1172C1008ADF63 /* FDOCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393CC0F1172C1008ADF63 /* FDOCommand.h */; };
+		916393D70F117412008ADF63 /* FDOSQLiteConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393D50F117412008ADF63 /* FDOSQLiteConnection.h */; };
+		916393D80F117412008ADF63 /* FDOSQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393D60F117412008ADF63 /* FDOSQLiteConnection.m */; };
+		916393DB0F117436008ADF63 /* FDOSQLiteCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393D90F117436008ADF63 /* FDOSQLiteCommand.h */; };
+		916393DC0F117436008ADF63 /* FDOSQLiteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393DA0F117436008ADF63 /* FDOSQLiteCommand.m */; };
+		916393F00F11755F008ADF63 /* FDOLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393EE0F11755F008ADF63 /* FDOLog.h */; };
+		916393F10F11755F008ADF63 /* FDOLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393EF0F11755F008ADF63 /* FDOLog.m */; };
+		916394690F117DD7008ADF63 /* FDOSQLiteConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 916394680F117DD7008ADF63 /* FDOSQLiteConnectionTest.m */; };
+		916394920F11827A008ADF63 /* libFoundationDataObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libFoundationDataObjects.a */; };
+		9163949A0F1182B2008ADF63 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 916394990F1182B2008ADF63 /* libsqlite3.dylib */; };
+		9163949D0F1182D4008ADF63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9163949C0F1182D4008ADF63 /* Foundation.framework */; };
+		916D3C571473814800BA5243 /* FDOConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393B40F115E13008ADF63 /* FDOConnection.h */; settings = {ATTRIBUTES = (); }; };
+		916D3C581473814800BA5243 /* FDOCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393CC0F1172C1008ADF63 /* FDOCommand.h */; };
+		916D3C591473814800BA5243 /* FDOSQLiteConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393D50F117412008ADF63 /* FDOSQLiteConnection.h */; };
+		916D3C5A1473814800BA5243 /* FDOSQLiteCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393D90F117436008ADF63 /* FDOSQLiteCommand.h */; };
+		916D3C5B1473814800BA5243 /* FDOLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 916393EE0F11755F008ADF63 /* FDOLog.h */; };
+		916D3C5C1473814800BA5243 /* FoundationDataObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 919CA8CF0F1198840019D550 /* FoundationDataObjects.h */; };
+		916D3C5D1473814800BA5243 /* FDOSQLiteRecordSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 919CA8EF0F11A4BC0019D550 /* FDOSQLiteRecordSet.h */; };
+		916D3C5E1473814800BA5243 /* FDOException.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF4F5D0F11CD4000C35561 /* FDOException.h */; };
+		916D3C5F1473814800BA5243 /* FDOSQLiteException.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF4F700F11D22400C35561 /* FDOSQLiteException.h */; };
+		916D3C601473814800BA5243 /* FDOSQLiteUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 91CDFFAE0F15B12E00B3D8CA /* FDOSQLiteUtilities.h */; };
+		916D3C621473814800BA5243 /* FDOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393B50F115E13008ADF63 /* FDOConnection.m */; };
+		916D3C631473814800BA5243 /* FDOSQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393D60F117412008ADF63 /* FDOSQLiteConnection.m */; };
+		916D3C641473814800BA5243 /* FDOSQLiteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393DA0F117436008ADF63 /* FDOSQLiteCommand.m */; };
+		916D3C651473814800BA5243 /* FDOLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 916393EF0F11755F008ADF63 /* FDOLog.m */; };
+		916D3C661473814800BA5243 /* FDOSQLiteRecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CA8F00F11A4BC0019D550 /* FDOSQLiteRecordSet.m */; };
+		916D3C671473814800BA5243 /* FDOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF4F5E0F11CD4000C35561 /* FDOException.m */; };
+		916D3C681473814800BA5243 /* FDOSQLiteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDFFAF0F15B12E00B3D8CA /* FDOSQLiteUtilities.m */; };
+		919CA8AC0F1183F20019D550 /* FDOSQLiteCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CA8AB0F1183F20019D550 /* FDOSQLiteCommandTest.m */; };
+		919CA8D00F1198840019D550 /* FoundationDataObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 919CA8CF0F1198840019D550 /* FoundationDataObjects.h */; };
+		919CA8F10F11A4BC0019D550 /* FDOSQLiteRecordSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 919CA8EF0F11A4BC0019D550 /* FDOSQLiteRecordSet.h */; };
+		919CA8F20F11A4BC0019D550 /* FDOSQLiteRecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CA8F00F11A4BC0019D550 /* FDOSQLiteRecordSet.m */; };
+		91BF4F5F0F11CD4000C35561 /* FDOException.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF4F5D0F11CD4000C35561 /* FDOException.h */; };
+		91BF4F600F11CD4000C35561 /* FDOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF4F5E0F11CD4000C35561 /* FDOException.m */; };
+		91BF4F710F11D22400C35561 /* FDOSQLiteException.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF4F700F11D22400C35561 /* FDOSQLiteException.h */; };
+		91CDFFB00F15B12E00B3D8CA /* FDOSQLiteUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 91CDFFAE0F15B12E00B3D8CA /* FDOSQLiteUtilities.h */; };
+		91CDFFB10F15B12E00B3D8CA /* FDOSQLiteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDFFAF0F15B12E00B3D8CA /* FDOSQLiteUtilities.m */; };
+		91F46AFA0F131543003F1580 /* FDOSQLiteRecordSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F46AF10F1314BE003F1580 /* FDOSQLiteRecordSetTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		916394100F117BB4008ADF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = FoundationDataObjects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* FoundationDataObjects_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationDataObjects_Prefix.pch; sourceTree = "<group>"; };
+		916393B40F115E13008ADF63 /* FDOConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOConnection.h; sourceTree = "<group>"; };
+		916393B50F115E13008ADF63 /* FDOConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOConnection.m; sourceTree = "<group>"; };
+		916393CC0F1172C1008ADF63 /* FDOCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOCommand.h; sourceTree = "<group>"; };
+		916393D50F117412008ADF63 /* FDOSQLiteConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteConnection.h; sourceTree = "<group>"; };
+		916393D60F117412008ADF63 /* FDOSQLiteConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteConnection.m; sourceTree = "<group>"; };
+		916393D90F117436008ADF63 /* FDOSQLiteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteCommand.h; sourceTree = "<group>"; };
+		916393DA0F117436008ADF63 /* FDOSQLiteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteCommand.m; sourceTree = "<group>"; };
+		916393EE0F11755F008ADF63 /* FDOLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOLog.h; sourceTree = "<group>"; };
+		916393EF0F11755F008ADF63 /* FDOLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOLog.m; sourceTree = "<group>"; };
+		916394090F117B3D008ADF63 /* FDO Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDO Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9163940A0F117B3D008ADF63 /* FDO Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FDO Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		916394670F117DD7008ADF63 /* FDOSQLiteConnectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteConnectionTest.h; sourceTree = "<group>"; };
+		916394680F117DD7008ADF63 /* FDOSQLiteConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteConnectionTest.m; sourceTree = "<group>"; };
+		916394990F1182B2008ADF63 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		9163949C0F1182D4008ADF63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		916D3C6D1473814800BA5243 /* libFoundationDataObjectsiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationDataObjectsiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		919CA8AA0F1183F20019D550 /* FDOSQLiteCommandTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteCommandTest.h; sourceTree = "<group>"; };
+		919CA8AB0F1183F20019D550 /* FDOSQLiteCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteCommandTest.m; sourceTree = "<group>"; };
+		919CA8B40F1185C00019D550 /* FDORecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDORecordSet.h; sourceTree = "<group>"; };
+		919CA8CF0F1198840019D550 /* FoundationDataObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationDataObjects.h; sourceTree = "<group>"; };
+		919CA8EF0F11A4BC0019D550 /* FDOSQLiteRecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteRecordSet.h; sourceTree = "<group>"; };
+		919CA8F00F11A4BC0019D550 /* FDOSQLiteRecordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteRecordSet.m; sourceTree = "<group>"; };
+		91BF4F5D0F11CD4000C35561 /* FDOException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOException.h; sourceTree = "<group>"; };
+		91BF4F5E0F11CD4000C35561 /* FDOException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOException.m; sourceTree = "<group>"; };
+		91BF4F700F11D22400C35561 /* FDOSQLiteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteException.h; sourceTree = "<group>"; };
+		91CDFFAE0F15B12E00B3D8CA /* FDOSQLiteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteUtilities.h; sourceTree = "<group>"; };
+		91CDFFAF0F15B12E00B3D8CA /* FDOSQLiteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteUtilities.m; sourceTree = "<group>"; };
+		91F46AF00F1314BE003F1580 /* FDOSQLiteRecordSetTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteRecordSetTest.h; sourceTree = "<group>"; };
+		91F46AF10F1314BE003F1580 /* FDOSQLiteRecordSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteRecordSetTest.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libFoundationDataObjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationDataObjects.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		916394060F117B3D008ADF63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916394920F11827A008ADF63 /* libFoundationDataObjects.a in Frameworks */,
+				9163949A0F1182B2008ADF63 /* libsqlite3.dylib in Frameworks */,
+				9163949D0F1182D4008ADF63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916D3C691473814800BA5243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFoundationDataObjects.a */,
+				916394090F117B3D008ADF63 /* FDO Unit Tests.octest */,
+				916D3C6D1473814800BA5243 /* libFoundationDataObjectsiOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FoundationDataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				916394990F1182B2008ADF63 /* libsqlite3.dylib */,
+				08FB77AEFE84172EC02AAC07 /* Source */,
+				9163945E0F117CCC008ADF63 /* Unit Tests */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				9163940A0F117B3D008ADF63 /* FDO Unit Tests-Info.plist */,
+				9163949C0F1182D4008ADF63 /* Foundation.framework */,
+			);
+			name = FoundationDataObjects;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				919CA8CF0F1198840019D550 /* FoundationDataObjects.h */,
+				916393B40F115E13008ADF63 /* FDOConnection.h */,
+				916393B50F115E13008ADF63 /* FDOConnection.m */,
+				916393CC0F1172C1008ADF63 /* FDOCommand.h */,
+				916393EE0F11755F008ADF63 /* FDOLog.h */,
+				916393EF0F11755F008ADF63 /* FDOLog.m */,
+				919CA8B40F1185C00019D550 /* FDORecordSet.h */,
+				91BF4F5D0F11CD4000C35561 /* FDOException.h */,
+				91BF4F5E0F11CD4000C35561 /* FDOException.m */,
+				916393BE0F117159008ADF63 /* SQLite */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* FoundationDataObjects_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		916393BE0F117159008ADF63 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				916393D50F117412008ADF63 /* FDOSQLiteConnection.h */,
+				916393D60F117412008ADF63 /* FDOSQLiteConnection.m */,
+				916393D90F117436008ADF63 /* FDOSQLiteCommand.h */,
+				916393DA0F117436008ADF63 /* FDOSQLiteCommand.m */,
+				919CA8EF0F11A4BC0019D550 /* FDOSQLiteRecordSet.h */,
+				919CA8F00F11A4BC0019D550 /* FDOSQLiteRecordSet.m */,
+				91BF4F700F11D22400C35561 /* FDOSQLiteException.h */,
+				91CDFFAE0F15B12E00B3D8CA /* FDOSQLiteUtilities.h */,
+				91CDFFAF0F15B12E00B3D8CA /* FDOSQLiteUtilities.m */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		9163945E0F117CCC008ADF63 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				916394670F117DD7008ADF63 /* FDOSQLiteConnectionTest.h */,
+				916394680F117DD7008ADF63 /* FDOSQLiteConnectionTest.m */,
+				919CA8AA0F1183F20019D550 /* FDOSQLiteCommandTest.h */,
+				919CA8AB0F1183F20019D550 /* FDOSQLiteCommandTest.m */,
+				91F46AF00F1314BE003F1580 /* FDOSQLiteRecordSetTest.h */,
+				91F46AF10F1314BE003F1580 /* FDOSQLiteRecordSetTest.m */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		916D3C561473814800BA5243 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916D3C571473814800BA5243 /* FDOConnection.h in Headers */,
+				916D3C581473814800BA5243 /* FDOCommand.h in Headers */,
+				916D3C591473814800BA5243 /* FDOSQLiteConnection.h in Headers */,
+				916D3C5A1473814800BA5243 /* FDOSQLiteCommand.h in Headers */,
+				916D3C5B1473814800BA5243 /* FDOLog.h in Headers */,
+				916D3C5C1473814800BA5243 /* FoundationDataObjects.h in Headers */,
+				916D3C5D1473814800BA5243 /* FDOSQLiteRecordSet.h in Headers */,
+				916D3C5E1473814800BA5243 /* FDOException.h in Headers */,
+				916D3C5F1473814800BA5243 /* FDOSQLiteException.h in Headers */,
+				916D3C601473814800BA5243 /* FDOSQLiteUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916393B60F115E13008ADF63 /* FDOConnection.h in Headers */,
+				916393CE0F1172C1008ADF63 /* FDOCommand.h in Headers */,
+				916393D70F117412008ADF63 /* FDOSQLiteConnection.h in Headers */,
+				916393DB0F117436008ADF63 /* FDOSQLiteCommand.h in Headers */,
+				916393F00F11755F008ADF63 /* FDOLog.h in Headers */,
+				919CA8D00F1198840019D550 /* FoundationDataObjects.h in Headers */,
+				919CA8F10F11A4BC0019D550 /* FDOSQLiteRecordSet.h in Headers */,
+				91BF4F5F0F11CD4000C35561 /* FDOException.h in Headers */,
+				91BF4F710F11D22400C35561 /* FDOSQLiteException.h in Headers */,
+				91CDFFB00F15B12E00B3D8CA /* FDOSQLiteUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		916394080F117B3D008ADF63 /* FDO Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9163940E0F117B3E008ADF63 /* Build configuration list for PBXNativeTarget "FDO Unit Tests" */;
+			buildPhases = (
+				916394040F117B3D008ADF63 /* Resources */,
+				916394050F117B3D008ADF63 /* Sources */,
+				916394060F117B3D008ADF63 /* Frameworks */,
+				916394070F117B3D008ADF63 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				916394110F117BB4008ADF63 /* PBXTargetDependency */,
+			);
+			name = "FDO Unit Tests";
+			productName = "FDO Unit Tests";
+			productReference = 916394090F117B3D008ADF63 /* FDO Unit Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		916D3C551473814800BA5243 /* FoundationDataObjectsiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916D3C6A1473814800BA5243 /* Build configuration list for PBXNativeTarget "FoundationDataObjectsiOS" */;
+			buildPhases = (
+				916D3C561473814800BA5243 /* Headers */,
+				916D3C611473814800BA5243 /* Sources */,
+				916D3C691473814800BA5243 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationDataObjectsiOS;
+			productName = FoundationDataObjects;
+			productReference = 916D3C6D1473814800BA5243 /* libFoundationDataObjectsiOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* FoundationDataObjects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FoundationDataObjects" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationDataObjects;
+			productName = FoundationDataObjects;
+			productReference = D2AAC07E0554694100DB518D /* libFoundationDataObjects.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FoundationDataObjects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* FoundationDataObjects */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FoundationDataObjects */,
+				916394080F117B3D008ADF63 /* FDO Unit Tests */,
+				916D3C551473814800BA5243 /* FoundationDataObjectsiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		916394040F117B3D008ADF63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		916394070F117B3D008ADF63 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		916394050F117B3D008ADF63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916394690F117DD7008ADF63 /* FDOSQLiteConnectionTest.m in Sources */,
+				919CA8AC0F1183F20019D550 /* FDOSQLiteCommandTest.m in Sources */,
+				91F46AFA0F131543003F1580 /* FDOSQLiteRecordSetTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916D3C611473814800BA5243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916D3C621473814800BA5243 /* FDOConnection.m in Sources */,
+				916D3C631473814800BA5243 /* FDOSQLiteConnection.m in Sources */,
+				916D3C641473814800BA5243 /* FDOSQLiteCommand.m in Sources */,
+				916D3C651473814800BA5243 /* FDOLog.m in Sources */,
+				916D3C661473814800BA5243 /* FDOSQLiteRecordSet.m in Sources */,
+				916D3C671473814800BA5243 /* FDOException.m in Sources */,
+				916D3C681473814800BA5243 /* FDOSQLiteUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916393B70F115E13008ADF63 /* FDOConnection.m in Sources */,
+				916393D80F117412008ADF63 /* FDOSQLiteConnection.m in Sources */,
+				916393DC0F117436008ADF63 /* FDOSQLiteCommand.m in Sources */,
+				916393F10F11755F008ADF63 /* FDOLog.m in Sources */,
+				919CA8F20F11A4BC0019D550 /* FDOSQLiteRecordSet.m in Sources */,
+				91BF4F600F11CD4000C35561 /* FDOException.m in Sources */,
+				91CDFFB10F15B12E00B3D8CA /* FDOSQLiteUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		916394110F117BB4008ADF63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* FoundationDataObjects */;
+			targetProxy = 916394100F117BB4008ADF63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FoundationDataObjects_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = FoundationDataObjects;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FoundationDataObjects_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FoundationDataObjects;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		9163940C0F117B3E008ADF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "FDO Unit Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "FDO Unit Tests";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9163940D0F117B3E008ADF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "FDO Unit Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "FDO Unit Tests";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		916D3C6B1473814800BA5243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FoundationDataObjects_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FoundationDataObjectsiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		916D3C6C1473814800BA5243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FoundationDataObjects_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FoundationDataObjectsiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FoundationDataObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FoundationDataObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9163940E0F117B3E008ADF63 /* Build configuration list for PBXNativeTarget "FDO Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9163940C0F117B3E008ADF63 /* Debug */,
+				9163940D0F117B3E008ADF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916D3C6A1473814800BA5243 /* Build configuration list for PBXNativeTarget "FoundationDataObjectsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916D3C6B1473814800BA5243 /* Debug */,
+				916D3C6C1473814800BA5243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

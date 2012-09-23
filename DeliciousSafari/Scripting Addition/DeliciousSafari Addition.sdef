@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary>
+	<suite name="DeliciousSafari Suite" code="DESA" description="DeliciousSafari plug-in loading">
+		<command name="do loadDeliciousSafari" code="DESALOAD" description="Load DeliciousSafari">
+			<result type="text" description="OK on success"/>
+		</command>
+	</suite>
+</dictionary>

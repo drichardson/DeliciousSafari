@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* DeliciousSafariAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DeliciousSafariAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28216C970DB411BC00E5133A /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* MainNavigationViewController.m */; };
+		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		91021EFF0E2DCFEF008F4787 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 91021EFE0E2DCFEF008F4787 /* Default.png */; };
+		91027F7C0E9C5400007BFBEF /* RecentlySavedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91027F7B0E9C5400007BFBEF /* RecentlySavedTableViewController.m */; };
+		911660F60E1DF591005557B3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911660F50E1DF591005557B3 /* Security.framework */; };
+		911DEC0D0EA55A020027797B /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911DEC0C0EA55A020027797B /* SettingsTableViewController.m */; };
+		911DEC970EA5632D0027797B /* RefreshButtonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911DEC960EA5632D0027797B /* RefreshButtonTableViewController.m */; };
+		913757490EA272EF00D184ED /* FlowLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913757480EA272EF00D184ED /* FlowLayoutView.m */; };
+		913757AE0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 913757AB0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.m */; };
+		913757AF0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 913757AD0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.m */; };
+		9161CF090E993221006F2BD2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161CF070E993221006F2BD2 /* CoreLocation.framework */; };
+		9161CF0A0E993221006F2BD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161CF080E993221006F2BD2 /* QuartzCore.framework */; };
+		9163927B0F10637D008ADF63 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9163927A0F10637D008ADF63 /* libsqlite3.dylib */; };
+		9164FB7714724A5C005CB276 /* BookmarksDeliciousAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9164FB7614724A5C005CB276 /* BookmarksDeliciousAPIManager.m */; };
+		91655A43100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91655A42100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.m */; };
+		916D3C831473823800BA5243 /* libFoundationDataObjectsiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916D3C811473822800BA5243 /* libFoundationDataObjectsiOS.a */; };
+		916F80980E9F1D2D00EF3200 /* SelectFavoriteTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916F80970E9F1D2D00EF3200 /* SelectFavoriteTagViewController.m */; };
+		916F812B0E9F23E600EF3200 /* SelectFavoriteTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916F812A0E9F23E600EF3200 /* SelectFavoriteTagView.xib */; };
+		916F817B0E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916F817A0E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.m */; };
+		9174F41C0E0DD83700724AB3 /* AllTagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174F41B0E0DD83700724AB3 /* AllTagsTableViewController.m */; };
+		9174F4690E0DEDEC00724AB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174F4680E0DEDEC00724AB3 /* CoreGraphics.framework */; };
+		9174F4990E0DF76B00724AB3 /* BookmarkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174F4980E0DF76B00724AB3 /* BookmarkListViewController.m */; };
+		9177D8730E0E11AE00D5E896 /* logo-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177D8720E0E11AE00D5E896 /* logo-57x57.png */; };
+		9177D87E0E0E12C800D5E896 /* DXDeliciousAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9177D87D0E0E12C800D5E896 /* DXDeliciousAPI.m */; };
+		917AA6CA0E14A352008DDA76 /* DXUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 917AA6C90E14A352008DDA76 /* DXUtilities.m */; };
+		917B29140EAD7F2A00CAC15C /* BookmarksForTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B29130EAD7F2A00CAC15C /* BookmarksForTagTableViewController.m */; };
+		918D69540E201D360017D30D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 918D69530E201D360017D30D /* libxml2.dylib */; };
+		9195508F0E9B074000F5CA65 /* TopLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9195508E0E9B074000F5CA65 /* TopLevelViewController.m */; };
+		919551500E9B0F4600F5CA65 /* FavoriteTagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9195514F0E9B0F4600F5CA65 /* FavoriteTagsTableViewController.m */; };
+		919551680E9B0FD100F5CA65 /* BundlesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919551670E9B0FD100F5CA65 /* BundlesTableViewController.m */; };
+		91986B460E15FE5E0004BCE9 /* DeliciousSafariDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91986B450E15FE5E0004BCE9 /* DeliciousSafariDefinitions.m */; };
+		9199F8B10E4981A700E60D00 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9199F8B00E4981A700E60D00 /* dist.plist */; };
+		91B3C3F10E16A63F0065416F /* DXDeliciousDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B3C3F00E16A63F0065416F /* DXDeliciousDatabase.m */; };
+		91C433B10FE2978300F32D33 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37C989D0F9BA046007CD4F4 /* AddressBook.framework */; };
+		91C433BA0FE2979200F32D33 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3498D000F89CFA50009E09E /* SystemConfiguration.framework */; };
+		91C433CB0FE2979E00F32D33 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CC2BE00F72169700C497E8 /* MessageUI.framework */; };
+		91C433D10FE2980A00F32D33 /* TopLevelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B1A320F7362D200403C25 /* TopLevelView.xib */; };
+		91C433D20FE2981F00F32D33 /* RefreshWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D709D00F85D58600DB6CA5 /* RefreshWindow.m */; };
+		91E39C0F0E43FF9E00269037 /* SaveBookmarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E39C0E0E43FF9E00269037 /* SaveBookmarkView.xib */; };
+		91E39C170E4401F000269037 /* SaveBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E39C160E4401F000269037 /* SaveBookmarkViewController.m */; };
+		D30D5ACA106F0E8C002251E0 /* ProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D30D5AC9106F0E8C002251E0 /* ProgressOverlayView.m */; };
+		D33AB0600F2270C700F6A502 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AB05F0F2270C700F6A502 /* CreditsViewController.m */; };
+		D33AB0750F2273A100F6A502 /* CreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33AB0740F2273A100F6A502 /* CreditsView.xib */; };
+		D36D890A1069B6CC0010FA2F /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D89091069B6CC0010FA2F /* GradientView.m */; };
+		D36FB3A2106FFDBB00B662E2 /* EditNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36FB3A1106FFDBB00B662E2 /* EditNotesViewController.m */; };
+		D3740FE60FB601AD0067498A /* BackGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = D3740FE20FB601AD0067498A /* BackGlyph.png */; };
+		D3740FE70FB601AD0067498A /* ForwardGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = D3740FE30FB601AD0067498A /* ForwardGlyph.png */; };
+		D398B71B107B0C3C007A7A9E /* FixedMailComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D398B71A107B0C3C007A7A9E /* FixedMailComposerViewController.m */; };
+		D3CE87200F53AB28009155AC /* BrowserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CE871F0F53AB28009155AC /* BrowserView.xib */; };
+		D3CE87350F53AD5E009155AC /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CE87330F53AD5E009155AC /* BrowserViewController.m */; };
+		D3D629080EF8ED7200031549 /* FavoriteItemsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D629040EF8ED7200031549 /* FavoriteItemsIcon.png */; };
+		D3D629090EF8ED7200031549 /* GeneralPrefsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D629050EF8ED7200031549 /* GeneralPrefsIcon.png */; };
+		D3D6290A0EF8ED7200031549 /* RecentItemsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D629060EF8ED7200031549 /* RecentItemsIcon.png */; };
+		D3D6290B0EF8ED7200031549 /* TagIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D629070EF8ED7200031549 /* TagIcon.png */; };
+		D3ED34BC0F9FE94500D6DA43 /* ContactsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3ED34BA0F9FE94500D6DA43 /* ContactsIcon.png */; };
+		D3FD52230F22A499002E2468 /* logo-128.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FD52220F22A499002E2468 /* logo-128.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		916D3C7C1473822800BA5243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = FoundationDataObjects;
+		};
+		916D3C7E1473822800BA5243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 916394090F117B3D008ADF63;
+			remoteInfo = "FDO Unit Tests";
+		};
+		916D3C801473822800BA5243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 916D3C6D1473814800BA5243;
+			remoteInfo = FoundationDataObjectsiOS;
+		};
+		916D3C841473824200BA5243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 916D3C551473814800BA5243;
+			remoteInfo = FoundationDataObjectsiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* DeliciousSafariAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliciousSafariAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* DeliciousSafariAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliciousSafariAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Bookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28216C950DB411BC00E5133A /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		28216C960DB411BC00E5133A /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
+		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91021EFE0E2DCFEF008F4787 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		91027F7A0E9C5400007BFBEF /* RecentlySavedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentlySavedTableViewController.h; sourceTree = "<group>"; };
+		91027F7B0E9C5400007BFBEF /* RecentlySavedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentlySavedTableViewController.m; sourceTree = "<group>"; };
+		911660F50E1DF591005557B3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		911DEC0B0EA55A020027797B /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		911DEC0C0EA55A020027797B /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		911DEC950EA5632D0027797B /* RefreshButtonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshButtonTableViewController.h; sourceTree = "<group>"; };
+		911DEC960EA5632D0027797B /* RefreshButtonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshButtonTableViewController.m; sourceTree = "<group>"; };
+		91369A1F0E4649680093CF66 /* Bookmarks_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmarks_Prefix.pch; sourceTree = "<group>"; };
+		913757470EA272EF00D184ED /* FlowLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutView.h; sourceTree = "<group>"; };
+		913757480EA272EF00D184ED /* FlowLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutView.m; sourceTree = "<group>"; };
+		913757AA0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DXBSJSONAdditions.h"; path = "../DeliciousSafari/NSDictionary+DXBSJSONAdditions.h"; sourceTree = SOURCE_ROOT; };
+		913757AB0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DXBSJSONAdditions.m"; path = "../DeliciousSafari/NSDictionary+DXBSJSONAdditions.m"; sourceTree = SOURCE_ROOT; };
+		913757AC0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSScanner+DXBSJSONAdditions.h"; path = "../DeliciousSafari/NSScanner+DXBSJSONAdditions.h"; sourceTree = SOURCE_ROOT; };
+		913757AD0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSScanner+DXBSJSONAdditions.m"; path = "../DeliciousSafari/NSScanner+DXBSJSONAdditions.m"; sourceTree = SOURCE_ROOT; };
+		9161CF070E993221006F2BD2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9161CF080E993221006F2BD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9163927A0F10637D008ADF63 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9164FB7514724A5C005CB276 /* BookmarksDeliciousAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksDeliciousAPIManager.h; sourceTree = "<group>"; };
+		9164FB7614724A5C005CB276 /* BookmarksDeliciousAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksDeliciousAPIManager.m; sourceTree = "<group>"; };
+		91655A41100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+BrowserViewAdditions.h"; sourceTree = "<group>"; };
+		91655A42100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+BrowserViewAdditions.m"; sourceTree = "<group>"; };
+		916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationDataObjects.xcodeproj; path = ../DeliciousSafari/FoundationDataObjects/FoundationDataObjects.xcodeproj; sourceTree = "<group>"; };
+		916F80960E9F1D2D00EF3200 /* SelectFavoriteTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFavoriteTagViewController.h; sourceTree = "<group>"; };
+		916F80970E9F1D2D00EF3200 /* SelectFavoriteTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFavoriteTagViewController.m; sourceTree = "<group>"; };
+		916F812A0E9F23E600EF3200 /* SelectFavoriteTagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectFavoriteTagView.xib; sourceTree = "<group>"; };
+		916F81790E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFavoriteTagsTableViewController.h; sourceTree = "<group>"; };
+		916F817A0E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFavoriteTagsTableViewController.m; sourceTree = "<group>"; };
+		9174F41A0E0DD83700724AB3 /* AllTagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTagsTableViewController.h; sourceTree = "<group>"; };
+		9174F41B0E0DD83700724AB3 /* AllTagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTagsTableViewController.m; sourceTree = "<group>"; };
+		9174F4680E0DEDEC00724AB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9174F4970E0DF76B00724AB3 /* BookmarkListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkListViewController.h; sourceTree = "<group>"; };
+		9174F4980E0DF76B00724AB3 /* BookmarkListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkListViewController.m; sourceTree = "<group>"; };
+		9177D8720E0E11AE00D5E896 /* logo-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-57x57.png"; sourceTree = "<group>"; };
+		9177D87C0E0E12C800D5E896 /* DXDeliciousAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DXDeliciousAPI.h; path = ../DeliciousSafari/DXDeliciousAPI.h; sourceTree = SOURCE_ROOT; };
+		9177D87D0E0E12C800D5E896 /* DXDeliciousAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DXDeliciousAPI.m; path = ../DeliciousSafari/DXDeliciousAPI.m; sourceTree = SOURCE_ROOT; };
+		917AA6C80E14A352008DDA76 /* DXUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DXUtilities.h; path = ../DeliciousSafari/DXUtilities.h; sourceTree = SOURCE_ROOT; };
+		917AA6C90E14A352008DDA76 /* DXUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DXUtilities.m; path = ../DeliciousSafari/DXUtilities.m; sourceTree = SOURCE_ROOT; };
+		917B29120EAD7F2A00CAC15C /* BookmarksForTagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksForTagTableViewController.h; sourceTree = "<group>"; };
+		917B29130EAD7F2A00CAC15C /* BookmarksForTagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksForTagTableViewController.m; sourceTree = "<group>"; };
+		918D69530E201D360017D30D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		9195508D0E9B074000F5CA65 /* TopLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopLevelViewController.h; sourceTree = "<group>"; };
+		9195508E0E9B074000F5CA65 /* TopLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopLevelViewController.m; sourceTree = "<group>"; };
+		9195514E0E9B0F4600F5CA65 /* FavoriteTagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTagsTableViewController.h; sourceTree = "<group>"; };
+		9195514F0E9B0F4600F5CA65 /* FavoriteTagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTagsTableViewController.m; sourceTree = "<group>"; };
+		919551660E9B0FD100F5CA65 /* BundlesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundlesTableViewController.h; sourceTree = "<group>"; };
+		919551670E9B0FD100F5CA65 /* BundlesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundlesTableViewController.m; sourceTree = "<group>"; };
+		91986B420E15FE3D0004BCE9 /* DeliciousSafariDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliciousSafariDefinitions.h; sourceTree = "<group>"; };
+		91986B450E15FE5E0004BCE9 /* DeliciousSafariDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliciousSafariDefinitions.m; sourceTree = "<group>"; };
+		9199F8B00E4981A700E60D00 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
+		91B3C3EF0E16A63F0065416F /* DXDeliciousDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DXDeliciousDatabase.h; path = ../DeliciousSafari/DXDeliciousDatabase.h; sourceTree = SOURCE_ROOT; };
+		91B3C3F00E16A63F0065416F /* DXDeliciousDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DXDeliciousDatabase.m; path = ../DeliciousSafari/DXDeliciousDatabase.m; sourceTree = SOURCE_ROOT; };
+		91E39C0E0E43FF9E00269037 /* SaveBookmarkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveBookmarkView.xib; sourceTree = "<group>"; };
+		91E39C150E4401F000269037 /* SaveBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveBookmarkViewController.h; sourceTree = "<group>"; };
+		91E39C160E4401F000269037 /* SaveBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveBookmarkViewController.m; sourceTree = "<group>"; };
+		D30D5AC8106F0E8C002251E0 /* ProgressOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressOverlayView.h; sourceTree = "<group>"; };
+		D30D5AC9106F0E8C002251E0 /* ProgressOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressOverlayView.m; sourceTree = "<group>"; };
+		D31B1A320F7362D200403C25 /* TopLevelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopLevelView.xib; sourceTree = "<group>"; };
+		D33AB05E0F2270C700F6A502 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		D33AB05F0F2270C700F6A502 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		D33AB0740F2273A100F6A502 /* CreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditsView.xib; sourceTree = "<group>"; };
+		D3498D000F89CFA50009E09E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D36D89081069B6CC0010FA2F /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		D36D89091069B6CC0010FA2F /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		D36FB3A0106FFDBB00B662E2 /* EditNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNotesViewController.h; sourceTree = "<group>"; };
+		D36FB3A1106FFDBB00B662E2 /* EditNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNotesViewController.m; sourceTree = "<group>"; };
+		D3740FE20FB601AD0067498A /* BackGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackGlyph.png; path = Images/BackGlyph.png; sourceTree = "<group>"; };
+		D3740FE30FB601AD0067498A /* ForwardGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForwardGlyph.png; path = Images/ForwardGlyph.png; sourceTree = "<group>"; };
+		D37C989D0F9BA046007CD4F4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D398B719107B0C3C007A7A9E /* FixedMailComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedMailComposerViewController.h; sourceTree = "<group>"; };
+		D398B71A107B0C3C007A7A9E /* FixedMailComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedMailComposerViewController.m; sourceTree = "<group>"; };
+		D3CC2BE00F72169700C497E8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D3CE871F0F53AB28009155AC /* BrowserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserView.xib; sourceTree = "<group>"; };
+		D3CE87320F53AD5E009155AC /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		D3CE87330F53AD5E009155AC /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		D3D629040EF8ED7200031549 /* FavoriteItemsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FavoriteItemsIcon.png; path = Images/FavoriteItemsIcon.png; sourceTree = "<group>"; };
+		D3D629050EF8ED7200031549 /* GeneralPrefsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GeneralPrefsIcon.png; path = Images/GeneralPrefsIcon.png; sourceTree = "<group>"; };
+		D3D629060EF8ED7200031549 /* RecentItemsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RecentItemsIcon.png; path = Images/RecentItemsIcon.png; sourceTree = "<group>"; };
+		D3D629070EF8ED7200031549 /* TagIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TagIcon.png; path = Images/TagIcon.png; sourceTree = "<group>"; };
+		D3D709CF0F85D58600DB6CA5 /* RefreshWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshWindow.h; sourceTree = "<group>"; };
+		D3D709D00F85D58600DB6CA5 /* RefreshWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshWindow.m; sourceTree = "<group>"; };
+		D3ED34BA0F9FE94500D6DA43 /* ContactsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ContactsIcon.png; path = Images/ContactsIcon.png; sourceTree = "<group>"; };
+		D3FD52220F22A499002E2468 /* logo-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-128.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916D3C831473823800BA5243 /* libFoundationDataObjectsiOS.a in Frameworks */,
+				91C433CB0FE2979E00F32D33 /* MessageUI.framework in Frameworks */,
+				91C433BA0FE2979200F32D33 /* SystemConfiguration.framework in Frameworks */,
+				91C433B10FE2978300F32D33 /* AddressBook.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				9174F4690E0DEDEC00724AB3 /* CoreGraphics.framework in Frameworks */,
+				911660F60E1DF591005557B3 /* Security.framework in Frameworks */,
+				918D69540E201D360017D30D /* libxml2.dylib in Frameworks */,
+				9161CF090E993221006F2BD2 /* CoreLocation.framework in Frameworks */,
+				9161CF0A0E993221006F2BD2 /* QuartzCore.framework in Frameworks */,
+				9163927B0F10637D008ADF63 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9164FB7514724A5C005CB276 /* BookmarksDeliciousAPIManager.h */,
+				9164FB7614724A5C005CB276 /* BookmarksDeliciousAPIManager.m */,
+				1D3623240D0F684500981E51 /* DeliciousSafariAppDelegate.h */,
+				1D3623250D0F684500981E51 /* DeliciousSafariAppDelegate.m */,
+				913757470EA272EF00D184ED /* FlowLayoutView.h */,
+				913757480EA272EF00D184ED /* FlowLayoutView.m */,
+				D3D709CF0F85D58600DB6CA5 /* RefreshWindow.h */,
+				D3D709D00F85D58600DB6CA5 /* RefreshWindow.m */,
+				D36D89081069B6CC0010FA2F /* GradientView.h */,
+				D36D89091069B6CC0010FA2F /* GradientView.m */,
+				D30D5AC8106F0E8C002251E0 /* ProgressOverlayView.h */,
+				D30D5AC9106F0E8C002251E0 /* ProgressOverlayView.m */,
+				9161CF5B0E993670006F2BD2 /* DeliciousSafari Shared Code */,
+				9174F49A0E0DF78900724AB3 /* View Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Bookmarks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* DeliciousSafari */ = {
+			isa = PBXGroup;
+			children = (
+				916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = DeliciousSafari;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				91369A1F0E4649680093CF66 /* Bookmarks_Prefix.pch */,
+				91986B420E15FE3D0004BCE9 /* DeliciousSafariDefinitions.h */,
+				91986B450E15FE5E0004BCE9 /* DeliciousSafariDefinitions.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3740FE20FB601AD0067498A /* BackGlyph.png */,
+				D3740FE30FB601AD0067498A /* ForwardGlyph.png */,
+				D31B1A320F7362D200403C25 /* TopLevelView.xib */,
+				D3ED34BA0F9FE94500D6DA43 /* ContactsIcon.png */,
+				D3D629040EF8ED7200031549 /* FavoriteItemsIcon.png */,
+				D3D629050EF8ED7200031549 /* GeneralPrefsIcon.png */,
+				D3D629060EF8ED7200031549 /* RecentItemsIcon.png */,
+				D3D629070EF8ED7200031549 /* TagIcon.png */,
+				D3CE871F0F53AB28009155AC /* BrowserView.xib */,
+				D33AB0740F2273A100F6A502 /* CreditsView.xib */,
+				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				91E39C0E0E43FF9E00269037 /* SaveBookmarkView.xib */,
+				916F812A0E9F23E600EF3200 /* SelectFavoriteTagView.xib */,
+				9177D8720E0E11AE00D5E896 /* logo-57x57.png */,
+				D3FD52220F22A499002E2468 /* logo-128.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				91021EFE0E2DCFEF008F4787 /* Default.png */,
+				9199F8B00E4981A700E60D00 /* dist.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3498D000F89CFA50009E09E /* SystemConfiguration.framework */,
+				D37C989D0F9BA046007CD4F4 /* AddressBook.framework */,
+				9163927A0F10637D008ADF63 /* libsqlite3.dylib */,
+				D3CC2BE00F72169700C497E8 /* MessageUI.framework */,
+				9161CF070E993221006F2BD2 /* CoreLocation.framework */,
+				9161CF080E993221006F2BD2 /* QuartzCore.framework */,
+				918D69530E201D360017D30D /* libxml2.dylib */,
+				911660F50E1DF591005557B3 /* Security.framework */,
+				9174F4680E0DEDEC00724AB3 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9161CF5B0E993670006F2BD2 /* DeliciousSafari Shared Code */ = {
+			isa = PBXGroup;
+			children = (
+				913757AA0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.h */,
+				913757AB0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.m */,
+				913757AC0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.h */,
+				913757AD0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.m */,
+				91B3C3EF0E16A63F0065416F /* DXDeliciousDatabase.h */,
+				91B3C3F00E16A63F0065416F /* DXDeliciousDatabase.m */,
+				917AA6C80E14A352008DDA76 /* DXUtilities.h */,
+				917AA6C90E14A352008DDA76 /* DXUtilities.m */,
+				9177D87C0E0E12C800D5E896 /* DXDeliciousAPI.h */,
+				9177D87D0E0E12C800D5E896 /* DXDeliciousAPI.m */,
+			);
+			name = "DeliciousSafari Shared Code";
+			sourceTree = "<group>";
+		};
+		916D3C741473822800BA5243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				916D3C7D1473822800BA5243 /* libFoundationDataObjects.a */,
+				916D3C7F1473822800BA5243 /* FDO Unit Tests.octest */,
+				916D3C811473822800BA5243 /* libFoundationDataObjectsiOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9174F49A0E0DF78900724AB3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D398B719107B0C3C007A7A9E /* FixedMailComposerViewController.h */,
+				D398B71A107B0C3C007A7A9E /* FixedMailComposerViewController.m */,
+				9174F41A0E0DD83700724AB3 /* AllTagsTableViewController.h */,
+				9174F41B0E0DD83700724AB3 /* AllTagsTableViewController.m */,
+				917B29120EAD7F2A00CAC15C /* BookmarksForTagTableViewController.h */,
+				917B29130EAD7F2A00CAC15C /* BookmarksForTagTableViewController.m */,
+				9174F4970E0DF76B00724AB3 /* BookmarkListViewController.h */,
+				9174F4980E0DF76B00724AB3 /* BookmarkListViewController.m */,
+				919551660E9B0FD100F5CA65 /* BundlesTableViewController.h */,
+				919551670E9B0FD100F5CA65 /* BundlesTableViewController.m */,
+				9195514E0E9B0F4600F5CA65 /* FavoriteTagsTableViewController.h */,
+				9195514F0E9B0F4600F5CA65 /* FavoriteTagsTableViewController.m */,
+				28216C950DB411BC00E5133A /* MainNavigationViewController.h */,
+				28216C960DB411BC00E5133A /* MainNavigationViewController.m */,
+				91027F7A0E9C5400007BFBEF /* RecentlySavedTableViewController.h */,
+				91027F7B0E9C5400007BFBEF /* RecentlySavedTableViewController.m */,
+				911DEC950EA5632D0027797B /* RefreshButtonTableViewController.h */,
+				911DEC960EA5632D0027797B /* RefreshButtonTableViewController.m */,
+				91E39C150E4401F000269037 /* SaveBookmarkViewController.h */,
+				91E39C160E4401F000269037 /* SaveBookmarkViewController.m */,
+				916F80960E9F1D2D00EF3200 /* SelectFavoriteTagViewController.h */,
+				916F80970E9F1D2D00EF3200 /* SelectFavoriteTagViewController.m */,
+				916F81790E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.h */,
+				916F817A0E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.m */,
+				911DEC0B0EA55A020027797B /* SettingsTableViewController.h */,
+				911DEC0C0EA55A020027797B /* SettingsTableViewController.m */,
+				9195508D0E9B074000F5CA65 /* TopLevelViewController.h */,
+				9195508E0E9B074000F5CA65 /* TopLevelViewController.m */,
+				D33AB05E0F2270C700F6A502 /* CreditsViewController.h */,
+				D33AB05F0F2270C700F6A502 /* CreditsViewController.m */,
+				D3CE87320F53AD5E009155AC /* BrowserViewController.h */,
+				D3CE87330F53AD5E009155AC /* BrowserViewController.m */,
+				91655A41100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.h */,
+				91655A42100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.m */,
+				D36FB3A0106FFDBB00B662E2 /* EditNotesViewController.h */,
+				D36FB3A1106FFDBB00B662E2 /* EditNotesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Bookmarks Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bookmarks Pro" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				916D3C851473824200BA5243 /* PBXTargetDependency */,
+			);
+			name = "Bookmarks Pro";
+			productName = DeliciousSafari;
+			productReference = 1D6058910D05DD3D006BFB54 /* Bookmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bookmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* DeliciousSafari */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 916D3C741473822800BA5243 /* Products */;
+					ProjectRef = 916D3C731473822800BA5243 /* FoundationDataObjects.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Bookmarks Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		916D3C7D1473822800BA5243 /* libFoundationDataObjects.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationDataObjects.a;
+			remoteRef = 916D3C7C1473822800BA5243 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		916D3C7F1473822800BA5243 /* FDO Unit Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDO Unit Tests.octest";
+			remoteRef = 916D3C7E1473822800BA5243 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		916D3C811473822800BA5243 /* libFoundationDataObjectsiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationDataObjectsiOS.a;
+			remoteRef = 916D3C801473822800BA5243 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C433D10FE2980A00F32D33 /* TopLevelView.xib in Resources */,
+				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				9177D8730E0E11AE00D5E896 /* logo-57x57.png in Resources */,
+				91021EFF0E2DCFEF008F4787 /* Default.png in Resources */,
+				91E39C0F0E43FF9E00269037 /* SaveBookmarkView.xib in Resources */,
+				9199F8B10E4981A700E60D00 /* dist.plist in Resources */,
+				916F812B0E9F23E600EF3200 /* SelectFavoriteTagView.xib in Resources */,
+				D3D629080EF8ED7200031549 /* FavoriteItemsIcon.png in Resources */,
+				D3D629090EF8ED7200031549 /* GeneralPrefsIcon.png in Resources */,
+				D3D6290A0EF8ED7200031549 /* RecentItemsIcon.png in Resources */,
+				D3D6290B0EF8ED7200031549 /* TagIcon.png in Resources */,
+				D33AB0750F2273A100F6A502 /* CreditsView.xib in Resources */,
+				D3FD52230F22A499002E2468 /* logo-128.png in Resources */,
+				D3CE87200F53AB28009155AC /* BrowserView.xib in Resources */,
+				D3ED34BC0F9FE94500D6DA43 /* ContactsIcon.png in Resources */,
+				D3740FE60FB601AD0067498A /* BackGlyph.png in Resources */,
+				D3740FE70FB601AD0067498A /* ForwardGlyph.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C433D20FE2981F00F32D33 /* RefreshWindow.m in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* DeliciousSafariAppDelegate.m in Sources */,
+				28216C970DB411BC00E5133A /* MainNavigationViewController.m in Sources */,
+				9174F41C0E0DD83700724AB3 /* AllTagsTableViewController.m in Sources */,
+				9174F4990E0DF76B00724AB3 /* BookmarkListViewController.m in Sources */,
+				9177D87E0E0E12C800D5E896 /* DXDeliciousAPI.m in Sources */,
+				917AA6CA0E14A352008DDA76 /* DXUtilities.m in Sources */,
+				91986B460E15FE5E0004BCE9 /* DeliciousSafariDefinitions.m in Sources */,
+				91B3C3F10E16A63F0065416F /* DXDeliciousDatabase.m in Sources */,
+				91E39C170E4401F000269037 /* SaveBookmarkViewController.m in Sources */,
+				9195508F0E9B074000F5CA65 /* TopLevelViewController.m in Sources */,
+				919551500E9B0F4600F5CA65 /* FavoriteTagsTableViewController.m in Sources */,
+				919551680E9B0FD100F5CA65 /* BundlesTableViewController.m in Sources */,
+				91027F7C0E9C5400007BFBEF /* RecentlySavedTableViewController.m in Sources */,
+				916F80980E9F1D2D00EF3200 /* SelectFavoriteTagViewController.m in Sources */,
+				916F817B0E9F2A1900EF3200 /* SelectFavoriteTagsTableViewController.m in Sources */,
+				913757490EA272EF00D184ED /* FlowLayoutView.m in Sources */,
+				913757AE0EA314B000D184ED /* NSDictionary+DXBSJSONAdditions.m in Sources */,
+				913757AF0EA314B000D184ED /* NSScanner+DXBSJSONAdditions.m in Sources */,
+				911DEC0D0EA55A020027797B /* SettingsTableViewController.m in Sources */,
+				911DEC970EA5632D0027797B /* RefreshButtonTableViewController.m in Sources */,
+				917B29140EAD7F2A00CAC15C /* BookmarksForTagTableViewController.m in Sources */,
+				D33AB0600F2270C700F6A502 /* CreditsViewController.m in Sources */,
+				D3CE87350F53AD5E009155AC /* BrowserViewController.m in Sources */,
+				91655A43100863B000E4CD68 /* UITableViewController+BrowserViewAdditions.m in Sources */,
+				D36D890A1069B6CC0010FA2F /* GradientView.m in Sources */,
+				D30D5ACA106F0E8C002251E0 /* ProgressOverlayView.m in Sources */,
+				D36FB3A2106FFDBB00B662E2 /* EditNotesViewController.m in Sources */,
+				D398B71B107B0C3C007A7A9E /* FixedMailComposerViewController.m in Sources */,
+				9164FB7714724A5C005CB276 /* BookmarksDeliciousAPIManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		916D3C851473824200BA5243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoundationDataObjectsiOS;
+			targetProxy = 916D3C841473824200BA5243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bookmarks_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				HEADER_SEARCH_PATHS = (
+					../DeliciousSafari/FoundationDataObjects/Source,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = Bookmarks;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bookmarks_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				HEADER_SEARCH_PATHS = (
+					../DeliciousSafari/FoundationDataObjects/Source,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = Bookmarks;
+			};
+			name = Release;
+		};
+		9120FDA10E2C78B70051CC30 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		9120FDA20E2C78B70051CC30 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = dist.plist;
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bookmarks_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				HEADER_SEARCH_PATHS = (
+					../DeliciousSafari/FoundationDataObjects/Source,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = Bookmarks;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DELICIOUSSAFARI_IPHONE_TARGET=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bookmarks Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				9120FDA20E2C78B70051CC30 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bookmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				9120FDA10E2C78B70051CC30 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

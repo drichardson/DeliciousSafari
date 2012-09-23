@@ -1,5 +1,9 @@
 DeliciousSafari Developer README
 ======================================
+This repository contains the DeliciousSafari plug-in for Safari and the Bookmarks iPhone app.
+
+Building
+---------
 
 <pre>
 ./build.sh <short_version>

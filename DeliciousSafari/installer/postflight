@@ -1,0 +1,39 @@
+#!/usr/bin/python
+
+import os, sys, platform, shutil
+
+def isSnowLeopardOrLater():
+    ver = platform.mac_ver()[0].split('.')
+    
+    if ver[0].isdigit() and ver[1].isdigit():
+        major = int(ver[0])
+        minor = int(ver[1])
+    else:
+        major = minor = 0
+    
+    if major > 10 or (major == 10 and minor >= 6):
+        return True
+    return False
+
+
+def rmtreeOnError(func, path, exc_info):
+    print "Error removing " + path
+
+
+def main():
+    AgentLaunchdPlist="/Library/LaunchAgents/com.delicioussafari.DeliciousSafariAgent.plist"
+    
+    if isSnowLeopardOrLater():
+        user = os.getenv("USER")
+        print "Loading launchd plist for user " + user
+        launchdCommand="sudo -u '%s' launchctl load -S Aqua '%s'" % (os.getenv("USER"), AgentLaunchdPlist)
+        os.system(launchdCommand)
+    else:
+        print "Removing Snow Leopard and later specific files."
+        shutil.rmtree("/Library/Application Support/DeliciousSafari", onerror=rmtreeOnError)
+        shutil.rmtree(AgentLaunchdPlist, onerror=rmtreeOnError)
+        shutil.rmtree("/Library/ScriptingAdditions/DeliciousSafari Addition.osax", onerror=rmtreeOnError)
+        
+    sys.exit(0)
+
+main()

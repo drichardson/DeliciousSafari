@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                getAllDatabasePosts = id; 
+                getAllDatabaseTags = id; 
+                getAllPosts = id; 
+                getTags = id; 
+                post = id; 
+                update = id; 
+            }; 
+            CLASS = TesterController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                password = NSTextField; 
+                postDescription = NSTextField; 
+                postExtendedDescription = NSTextField; 
+                postTags = NSTextField; 
+                postURL = NSTextField; 
+                results = NSTextView; 
+                username = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
