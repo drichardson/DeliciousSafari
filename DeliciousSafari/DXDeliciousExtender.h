@@ -77,11 +77,6 @@
 	IBOutlet DXHyperlinkedTextField *aboutWindowDeliciousSafariLink;
 	IBOutlet NSTextField *aboutWindowVersion;
 
-	IBOutlet NSWindow *registerWindow;
-	IBOutlet NSTextField *registerEmailAddress;
-	IBOutlet NSTextField *registerLicenseKey;
-	IBOutlet NSTextField *registerStatusMessage;
-	
 	SCNetworkReachabilityRef mNetworkReachabilityRef;
 }
 
@@ -101,9 +96,5 @@
 - (IBAction)importerImportPressed:(id)sender;
 - (IBAction)importerCancelPressed:(id)sender;
 - (IBAction)importerItemCheckPressed:(id)sender;
-
-- (IBAction)registerPurchaseKeyPressed:(id)sender;
-- (IBAction)registerOKPressed:(id)sender;
-- (IBAction)registerCancelPressed:(id)sender;
 
 @end

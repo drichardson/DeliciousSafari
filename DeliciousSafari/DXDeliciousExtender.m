@@ -8,7 +8,6 @@
 
 #import "DXDeliciousExtender.h"
 #import "DXDeliciousMenuItem.h"
-#import "LicenseCheck.h"
 #import "DXUtilities.h"
 #import "DXButtonIconCell.h"
 #import "DXToolbarController.h"
@@ -572,10 +571,6 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 	[mi setTarget:self];
 #endif
 	
-	NSString *registerDeliciousSafariTitle = DXLocalizedString(@"Register DeliciousSafari...", @"Title of the Register DeliciousSafari... menu item.");
-	mi = [mDeliciousMenu addItemWithTitle:registerDeliciousSafariTitle action:@selector(showRegistration) keyEquivalent:@""];
-	[mi setTarget:self];
-		
 	NSString *aboutDeliciousSafariTitle = DXLocalizedString(@"About DeliciousSafari", @"Title of the About DeliciousSafari menu item.");
 	mi = [mDeliciousMenu addItemWithTitle:aboutDeliciousSafariTitle action:@selector(showAbout) keyEquivalent:@""];
 	[mi setTarget:self];
@@ -935,7 +930,6 @@ static NSData* ExecuteCommand(NSString* command)
 	[mAPI URLInfoRequest:url];
 	
 	[self showSheet:postWindow];
-    [self annoyanceCheck];
 }
 
 - (void) post
@@ -1037,8 +1031,6 @@ static NSData* ExecuteCommand(NSString* command)
 
 - (void) menuItemAction:(id)sender
 {	
-	[self annoyanceCheck];
-	
 	if([sender isKindOfClass:[DXDeliciousMenuItem class]])
 	{
 		DXDeliciousMenuItem *mi = (DXDeliciousMenuItem*)sender;
@@ -1353,8 +1345,6 @@ static NSData* ExecuteCommand(NSString* command)
 
 -(void)searchBookmarks
 {
-	[self annoyanceCheck];
-	
 	DXSearchController *searchController = [DXSearchController sharedController];
 	searchController.defaultFavicon = urlImage;
 	[searchController showWindow:self];
@@ -1484,58 +1474,6 @@ static NSData* ExecuteCommand(NSString* command)
 		[cell setState:[importerDataSource checkStateOfItem:item]];
 	}
 }
-
--(void)showRegistration
-{
-	[registerStatusMessage setHidden:YES];
-	[registerLicenseKey setStringValue:[mDB registrationLicenseKey]];
-	[registerEmailAddress setStringValue:[mDB registrationEmailAddress]];
-	
-	[registerWindow center];
-	[registerWindow makeKeyAndOrderFront:self];
-}
-
-- (IBAction)registerPurchaseKeyPressed:(id)sender
-{
-	[self hideSheet:registerWindow];
-	[[DXUtilities defaultUtilities] goToURL:@"http://delicioussafari.com/buy.php"];
-}
-
-- (IBAction)registerOKPressed:(id)sender
-{	
-	isLicenseValid = checkLicense([registerEmailAddress stringValue], [registerLicenseKey stringValue]);
-	
-	if(isLicenseValid)
-	{
-		
-		[mDB setRegistrationLicenseKey:[registerLicenseKey stringValue]];
-		[mDB setRegistrationEmailAddress:[registerEmailAddress stringValue]];
-		
-		[registerStatusMessage setTextColor:[NSColor greenColor]];
-		
-		NSString *validLicenseMessage = DXLocalizedString(@"You have a valid license. Thank you for registering.",
-														  @"Message to inform the license is valid and to thank the customer for registering.");
-		
-		[registerStatusMessage setStringValue:validLicenseMessage];
-		[registerStatusMessage setHidden:NO];
-		[self performSelector:@selector(hideSheet:) withObject:registerWindow afterDelay:1.5];
-	}
-	else
-	{
-		[registerStatusMessage setTextColor:[NSColor redColor]];
-		
-		NSString *invalidLicenseKey = DXLocalizedString(@"Invalid license key", @"Message to inform the license is invalid.");
-		
-		[registerStatusMessage setStringValue:invalidLicenseKey];
-		[registerStatusMessage setHidden:NO];
-	}
-}
-
-- (IBAction)registerCancelPressed:(id)sender
-{
-	[self hideSheet:registerWindow];
-}
-
 
 -(void)downloadFaviconsIfEnabled
 {
@@ -1795,27 +1733,6 @@ static NSData* ExecuteCommand(NSString* command)
 	return [[mDB tags] filteredArrayUsingPredicate:predicate];
 }
 
-
-#pragma mark ---- License Reminders ----
-
-// Periodicallly pop-up an annoying message to encourage people to register their software.
-- (void)annoyanceCheck
-{
-	if(!isLicenseValid)
-	{
-		NSDate *now = [NSDate date];
-		
-		if(nextTimeToAnnoy == nil || [nextTimeToAnnoy laterDate:now] == now)
-        {
-			[self showRegistration];
-            
-            const NSTimeInterval kTenMinutes = 10.0 * 60.0;
-            [nextTimeToAnnoy release];
-            nextTimeToAnnoy = [[NSDate dateWithTimeIntervalSinceNow:kTenMinutes] retain];
-        }
-	}
-}
-
 -(void) dxDeliciousDatabaseFaviconCallback:(BOOL)somethingChanged
 {
 	if(somethingChanged)
@@ -1849,132 +1766,9 @@ static NSData* ExecuteCommand(NSString* command)
 @end
 
 
-static NSString* buildPEMFormattedLicenseKey(NSString* unformattedKey)
-{
-	NSCharacterSet *base64CharacterSet = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/="];
-	NSCharacterSet *notBase64CharacterSet = [base64CharacterSet invertedSet];
-	
-	NSScanner *scanner = [NSScanner scannerWithString:unformattedKey];
-	[scanner setCharactersToBeSkipped:notBase64CharacterSet];
-	
-	NSMutableString *oneLongString = [NSMutableString string];
-	
-	while(![scanner isAtEnd])
-	{
-		NSString *outString;
-		if([scanner scanUpToCharactersFromSet:notBase64CharacterSet intoString:&outString])
-			[oneLongString appendString:outString];
-	}
-	
-	NSMutableString *pemFormattedLicenseKey = [NSMutableString string];
-	unsigned int i;
-	unsigned int len = [oneLongString length];
-	const unsigned int LINE_LEN = 64;
-	for(i = 0; i < len; i += LINE_LEN)
-	{
-		NSRange range = NSMakeRange(i, MIN(LINE_LEN, len - i));
-		[pemFormattedLicenseKey appendFormat:@"%@\n", [oneLongString substringWithRange:range]];
-	}
-	
-	return pemFormattedLicenseKey;
-}
-
 static BOOL checkLicense(NSString *email, NSString *licenseKey)
 {	
-	if(email == nil || licenseKey == nil)
-		return NO;
-	
-	// public key stored in PEM format.
-	NSMutableString *publicKey = [NSMutableString string];
-	
-	// Layout public key sub-strings in non-sequential order so that it is harder to piece
-	// together correctly just by looking at the string in the binary.
-	
-	// -----BEGIN PUBLIC KEY-----
-	// MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD2JFeOCPFlICwnxmWl6Kbqrs1N
-	// yUksWULLLXa9QaTHJ8BjWyf1L8GGHKBxYsR0gNrh5jZ/nKDIDHX002WlPzRBoGG6
-	// BS2STVBmO+Xpclouc3KTMihT011hGSbIU8nfupsMvXZsdiEw3pBB8YwKOMhfjKP5
-	// yCXuaPmjLEk3aEKuywIDAQAB
-	// -----END PUBLIC KEY-----
-	NSString *section2 = @"DQEBAQUAA4GNADCB";
-	NSString *section15 = @"\n";
-	NSString *section1 = @"MIGfMA0GCSqGSIb3";
-	NSString *section4 = @"ICwnxmWl6Kbqrs1N";
-	NSString *section6 = @"yUksWULLLXa9QaTH";
-	NSString *section3 = @"iQKBgQD2JFeOCPFl";
-	NSString *section7 = @"J8BjWyf1L8GGHKBx";
-	NSString *section16 = @"yCXuaPmjLEk3aEKu";
-	NSString *section9 = @"DHX002WlPzRBoGG6";
-	NSString *section5 = @"\n";
-	NSString *section13 = @"U8nfupsMvXZsdiEw";
-	NSString *section11 = @"BS2STVBmO+Xpclou";
-	NSString *section8 = @"YsR0gNrh5jZ/nKDI";
-	NSString *section12 = @"c3KTMihT011hGSbI";
-	NSString *section14 = @"3pBB8YwKOMhfjKP5";
-	NSString *section10 = @"\n";
-	NSString *section17 = @"ywIDAQAB";
-	NSString *section18 = @"\n";
-
-	[publicKey appendString:@"-----BEGIN PUBLIC KEY-----\n"];
-	[publicKey appendString:section1];
-	[publicKey appendString:section2];
-	[publicKey appendString:section3];
-	[publicKey appendString:section4];
-	[publicKey appendString:section5];
-	[publicKey appendString:section6];
-	[publicKey appendString:section7];
-	[publicKey appendString:section8];
-	[publicKey appendString:section9];
-	[publicKey appendString:section10];
-	[publicKey appendString:section11];
-	[publicKey appendString:section12];
-	[publicKey appendString:section13];
-	[publicKey appendString:section14];
-	[publicKey appendString:section15];
-	[publicKey appendString:section16];
-	[publicKey appendString:section17];
-	[publicKey appendString:section18];
-	[publicKey appendString:@"-----END PUBLIC KEY-----\n"];
-	
-#if 0
-	publicKey = @"-----BEGIN PUBLIC KEY-----\n"
-		"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD2JFeOCPFlICwnxmWl6Kbqrs1N\n"
-		"yUksWULLLXa9QaTHJ8BjWyf1L8GGHKBxYsR0gNrh5jZ/nKDIDHX002WlPzRBoGG6\n"
-		"BS2STVBmO+Xpclouc3KTMihT011hGSbIU8nfupsMvXZsdiEw3pBB8YwKOMhfjKP5\n"
-		"yCXuaPmjLEk3aEKuywIDAQAB\n"
-		"-----END PUBLIC KEY-----\n";
-#endif
-	
-	NSArray *blacklistedLicenseKeys = 
-		[NSArray arrayWithObjects:
-		 @"RNhvDYpAyddUYHFAjaMQrgqVUFscFyCb7ECZljNtdB1y5iLrpYqrkCsmaK8L/XFR5eslJ5Q123yie4r1a/mh2fC37Nhr5Cw/2UOzwKW4N3LAJ3EYNLwfgGJpCKWUjGXPjjXNIl8bG+LsOIg/75S6VH2/T6dT2vsUpaIb1Xs11Yg=",
-		 nil];
-
-	// Make sure e-mail address doesn't have whitespace before or after.
-	email = [email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];	
-	NSString *pemFormattedLicenseKey = buildPEMFormattedLicenseKey(licenseKey);
-	
-	if(pemFormattedLicenseKey == nil)
-	{
-		NSLog(@"DeliciousSafari got unexpected error while parsing license key");
-		return NO;
-	}
-	
-	
-	for(NSString *blacklistedKey in blacklistedLicenseKeys)
-	{
-		NSString *pemFormattedBlacklistedKey = buildPEMFormattedLicenseKey(blacklistedKey);
-		
-		if([pemFormattedBlacklistedKey isEqualToString:pemFormattedLicenseKey])
-		{
-			//NSLog(@"Blacklisted license");
-			return NO;
-		}
-	}
-	
-	return LICENSE_OK == DXCheckLicense([email UTF8String],
-										[pemFormattedLicenseKey UTF8String],
-										[publicKey UTF8String]);
+    return YES;
 }
 
 static void my_SCNetworkReachabilityCallBack(SCNetworkReachabilityRef target,
