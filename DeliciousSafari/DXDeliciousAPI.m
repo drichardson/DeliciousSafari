@@ -430,16 +430,22 @@ static NSDictionary* DXMakePostDictionary(NSString *href, NSString *description,
 		// There is some rouge file in our way. Just delete that sucker. Anyone who has the audacity
 		// to put a file named DeliciousSafari in their Application Support directory deserves to get burned ;)
 		
-		if(![fm removeFileAtPath:mQueueFileDirectory handler:nil])
-			NSLog(@"Could not remove rogue %@ file. Please remove it manually.", mQueueFileDirectory);
+        NSError* error = nil;
+        if(![fm removeItemAtPath:mQueueFileDirectory error:&error])
+        {
+			NSLog(@"Could not remove rogue %@ file. Please remove it manually. %@", mQueueFileDirectory, error);
+        }
 		
 		exists = NO;
 	}
 	
 	if(!exists)
 	{
-		if(![fm createDirectoryAtPath:mQueueFileDirectory attributes:nil])
-			NSLog(@"Error creating queue file directory. Queue will not be saved when Safari is quit which may result in Delicious posts being lost.");
+        NSError* error = nil;
+        if(![fm createDirectoryAtPath:mQueueFileDirectory withIntermediateDirectories:YES attributes:nil error:&error])
+        {
+			NSLog(@"Error creating queue file directory. Queue will not be saved when Safari is quit which may result in Delicious posts being lost. %@", error);
+        }
 	}
 	
 	if(![mRequestQueue writeToFile:mQueueFilePath atomically:YES])

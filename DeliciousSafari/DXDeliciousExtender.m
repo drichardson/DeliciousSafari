@@ -1178,7 +1178,7 @@ static NSData* ExecuteCommand(NSString* command)
 	
 	NSAlert *alert = [NSAlert alertWithMessageText:errorSavingBookmarkShouldDiscard
 									 defaultButton:review alternateButton:discard
-									   otherButton:nil informativeTextWithFormat:deletedRecordsCannotBeRestored];
+									   otherButton:nil informativeTextWithFormat:@"%@", deletedRecordsCannotBeRestored];
 	[alert setAlertStyle:NSCriticalAlertStyle];
 	
 	if([alert runModal] == NSAlertDefaultReturn)

@@ -219,6 +219,11 @@ static NSString* MakeToolbarItemPositionKey(NSToolbarItem* toolbarItem);
 // calling [self y] actually calls the original [self x]. This makes swizzling useful for playing nicely with multiple
 // plug-ins, because you can keep adding to the swizzle chain.
 
+@interface NSObject (makeWarningsGoAway)
+- (NSToolbarItem*)dxToolbar:(NSToolbar*)toolbar itemForItemIdentifier:(NSString*)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag;
+- (NSArray*)dxToolbarAllowedItemIdentifiers:(NSToolbar*)toolbar;
+@end
+
 static NSToolbarItem*
 dxToolbarItemForItemIdentifierWillBeInsertedIntoToolbar(id self, SEL _cmd, NSToolbar* toolbar, NSString* itemIdentifier, BOOL flag)
 {
