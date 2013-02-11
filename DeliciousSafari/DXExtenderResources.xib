@@ -55,7 +55,7 @@
 			<object class="NSWindowTemplate" id="367863102">
 				<int key="NSWindowStyleMask">1</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{710, 575}, {312, 188}}</string>
+				<string key="NSWindowRect">{{710, 622}, {312, 188}}</string>
 				<int key="NSWTFlags">1618478080</int>
 				<string key="NSWindowTitle">Login to Delicious</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -362,7 +362,7 @@
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="746782035"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{463, 472}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -370,7 +370,7 @@
 			<object class="NSWindowTemplate" id="981981966">
 				<int key="NSWindowStyleMask">9</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{492, 541}, {710, 308}}</string>
+				<string key="NSWindowRect">{{515, 527}, {710, 308}}</string>
 				<int key="NSWTFlags">1618478080</int>
 				<string key="NSWindowTitle">Add Bookmark to Delicious</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -946,7 +946,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="541469222"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{710, 330}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -954,7 +954,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<object class="NSWindowTemplate" id="820981107">
 				<int key="NSWindowStyleMask">9</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{432, 623}, {475, 256}}</string>
+				<string key="NSWindowRect">{{597, 574}, {475, 256}}</string>
 				<int key="NSWTFlags">1618478080</int>
 				<string key="NSWindowTitle">Manage Favorite Tags</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1361,7 +1361,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="1021471961"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{463, 472}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -1379,7 +1379,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<string key="NSWindowContentMinSize">{463, 450}</string>
 				<object class="NSView" key="NSWindowView" id="647835432">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1388,7 +1388,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{93, 99}, {101, 17}}</string>
 							<reference key="NSSuperview" ref="647835432"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="297938212"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="689960216">
@@ -1407,7 +1406,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{69, 61}, {149, 14}}</string>
 							<reference key="NSSuperview" ref="647835432"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="160934442"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="693342605">
@@ -1426,8 +1424,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{70, 12}, {148, 42}}</string>
 							<reference key="NSSuperview" ref="647835432"/>
-							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="544542705">
 								<int key="NSCellFlags">67108864</int>
@@ -1457,7 +1453,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{115, 122}, {57, 64}}</string>
 							<reference key="NSSuperview" ref="647835432"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="912667305"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="341858079">
@@ -1480,7 +1475,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{73, 77}, {141, 17}}</string>
 							<reference key="NSSuperview" ref="647835432"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="231998777"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="753437809">
@@ -1496,11 +1490,9 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						</object>
 					</object>
 					<string key="NSFrameSize">{284, 195}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="517888400"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{463, 472}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -1508,8 +1500,8 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<object class="NSWindowTemplate" id="634448651">
 				<int key="NSWindowStyleMask">9</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{525, 370}, {463, 450}}</string>
-				<int key="NSWTFlags">1677722624</int>
+				<string key="NSWindowRect">{{642, 428}, {463, 450}}</string>
+				<int key="NSWTFlags">1685586944</int>
 				<string key="NSWindowTitle">Import from Safari</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
@@ -1536,7 +1528,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 											<string key="NSFrameSize">{406, 186}</string>
 											<reference key="NSSuperview" ref="351615500"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="522226833"/>
+											<reference key="NSNextKeyView" ref="517849138"/>
 											<bool key="NSEnabled">YES</bool>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<bool key="NSControlAllowsExpansionToolTips">YES</bool>
@@ -1615,7 +1607,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<string key="NSFrame">{{407, 1}, {15, 186}}</string>
 									<reference key="NSSuperview" ref="636549956"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="599467770"/>
+									<reference key="NSNextKeyView" ref="522226833"/>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<reference key="NSTarget" ref="636549956"/>
 									<string key="NSAction">_doScroller:</string>
@@ -1627,7 +1619,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<string key="NSFrame">{{1, 187}, {406, 15}}</string>
 									<reference key="NSSuperview" ref="636549956"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="517849138"/>
+									<reference key="NSNextKeyView" ref="599467770"/>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="636549956"/>
@@ -1919,7 +1911,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="884083171"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{463, 472}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -3578,12 +3570,16 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string>300090.IBPluginDependency</string>
 					<string>300091.IBPluginDependency</string>
 					<string>300092.IBPluginDependency</string>
+					<string>46.IBNSWindowAutoPositionCentersHorizontal</string>
+					<string>46.IBNSWindowAutoPositionCentersVertical</string>
 					<string>46.IBPluginDependency</string>
 					<string>47.IBPluginDependency</string>
 					<string>48.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBWindowTemplateEditedContentRect</string>
 					<string>50.IBPluginDependency</string>
+					<string>503.IBNSWindowAutoPositionCentersHorizontal</string>
+					<string>503.IBNSWindowAutoPositionCentersVertical</string>
 					<string>503.IBPluginDependency</string>
 					<string>503.IBWindowTemplateEditedContentRect</string>
 					<string>504.IBPluginDependency</string>
@@ -3768,12 +3764,16 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<boolean value="NO"/>
+					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{99, 784}, {312, 188}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<boolean value="NO"/>
+					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{87, 522}, {463, 450}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
