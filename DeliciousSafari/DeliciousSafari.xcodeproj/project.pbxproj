@@ -43,7 +43,6 @@
 		91201B26104F924D00CA3FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
 		91201B56104F976900CA3FE9 /* DSUninstaller in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91201AFD104F8DE500CA3FE9 /* DSUninstaller */; };
 		91201B8C104F9BDC00CA3FE9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91201B8A104F9BDC00CA3FE9 /* MainMenu.xib */; };
-		91291E340CA22189005C7299 /* LicenseCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = 91291E330CA22189005C7299 /* LicenseCheck.c */; };
 		91291E730CA22842005C7299 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91291E720CA22842005C7299 /* libcrypto.dylib */; };
 		913306760E6517E5006DBDB0 /* DXFaviconDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F15A20E586401007EC254 /* DXFaviconDatabase.m */; };
 		91334590104B3438004AD5AD /* DeliciousSafari Addition.r in Rez */ = {isa = PBXBuildFile; fileRef = 911911A6104B19C2009A4427 /* DeliciousSafari Addition.r */; };
@@ -261,8 +260,6 @@
 		91201AFD104F8DE500CA3FE9 /* DSUninstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSUninstaller; sourceTree = BUILT_PRODUCTS_DIR; };
 		91201B05104F8E5800CA3FE9 /* DSUninstaller-main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSUninstaller-main.m"; sourceTree = "<group>"; };
 		91201B8B104F9BDC00CA3FE9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Uninstall/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		91291E330CA22189005C7299 /* LicenseCheck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LicenseCheck.c; sourceTree = "<group>"; };
-		91291E390CA221A1005C7299 /* LicenseCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseCheck.h; sourceTree = "<group>"; };
 		91291E720CA22842005C7299 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
 		913344D6104B1CDC004AD5AD /* Test Script.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = "Test Script.applescript"; sourceTree = "<group>"; };
 		9139D6B70DD94D0A002CA42C /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
@@ -517,8 +514,6 @@
 			isa = PBXGroup;
 			children = (
 				9194B7040DE283E100B66668 /* DeliciousSafari_Prefix.pch */,
-				91291E330CA22189005C7299 /* LicenseCheck.c */,
-				91291E390CA221A1005C7299 /* LicenseCheck.h */,
 				9139D6B70DD94D0A002CA42C /* MethodSwizzle.h */,
 				9139D6B80DD94D39002CA42C /* MethodSwizzle.m */,
 			);
@@ -1032,7 +1027,6 @@
 				9193FECE0C5EF0EC0083E0B1 /* DXDeliciousMenuItem.m in Sources */,
 				91A408360C5D1F6300C9E539 /* DXDeliciousExtender.m in Sources */,
 				91050B0D0C93C6270047FC30 /* DXFavoritesDataSource.m in Sources */,
-				91291E340CA22189005C7299 /* LicenseCheck.c in Sources */,
 				9185035F0CAA12A500026B0D /* DXUtilities.m in Sources */,
 				91A22DB90D2CC54000BC00CE /* DXSafariBookmarkDataSource.m in Sources */,
 				91E9E6110D31A98900128875 /* DXButtonIconCell.m in Sources */,
