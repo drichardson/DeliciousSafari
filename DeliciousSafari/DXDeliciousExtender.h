@@ -30,9 +30,6 @@
 	SEL afterLoginCallback;
 	NSBundle *deliciousSafariBundle;
 	
-	BOOL isLicenseValid;
-	NSDate *nextTimeToAnnoy;
-	
 	DXTagMenuController *mAllTagsController;
 	DXTagMenuController *mFavoriteTagsController;
 	

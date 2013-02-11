@@ -23,8 +23,6 @@ static NSString* const kTagsKeyOBSOLETE = @"tags";
 static NSString* const kLastUpdatedKey = @"lastUpdated";
 static NSString* const kFavoriteTagsKey = @"favoriteTags";
 static NSString* const kUsernameKey = @"username";
-static NSString* const kRegistrationEmailAddress = @"registrationEmailAddress";
-static NSString* const kRegistrationLicenseKey = @"registrationLicenseKey";
 static NSString* const kFaviconDatabaseNextRebuildKey = @"FaviconDatabaseNextRebuildDate";
 static NSString* const kFaviconHostSkipKey = @"FaviconHostSkipListKey";
 static NSString* const kShouldShareByDefaultKey = @"ShouldShareByDefault";
@@ -1147,26 +1145,6 @@ bail:
 -(BOOL)isLoggedIn
 {
 	return [[self username] length] > 0;
-}
-
--(NSString*)registrationEmailAddress
-{
-	return [self stringForKey:kRegistrationEmailAddress];
-}
-
--(void)setRegistrationEmailAddress:(NSString*)emailAddress
-{
-	[self setString:emailAddress forKey:kRegistrationEmailAddress];
-}
-
--(NSString*)registrationLicenseKey
-{
-	return [self stringForKey:kRegistrationLicenseKey];
-}
-
--(void)setRegistrationLicenseKey:(NSString*)licenseKey
-{
-	[self setString:licenseKey forKey:kRegistrationLicenseKey];
 }
 
 #ifdef DELICIOUSSAFARI_PLUGIN_TARGET

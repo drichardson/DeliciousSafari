@@ -19,8 +19,6 @@
 
 void DXLoadPlugin(void);
 
-static BOOL checkLicense(NSString *email, NSString *licenseKey);
-
 static void my_SCNetworkReachabilityCallBack(SCNetworkReachabilityRef target,
 											 SCNetworkConnectionFlags flags,
 											 void *info);
@@ -159,8 +157,6 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 			
 			mDB = [[DXDeliciousDatabase defaultDatabase] retain];
 			[self upgradeOldDatabaseIfNecessary];
-			
-			isLicenseValid = checkLicense([mDB registrationEmailAddress], [mDB registrationLicenseKey]);
 			
 			[loginWindowUserRegistrationLink setURL:[NSURL URLWithString:@"https://secure.delicious.com/register"]];
 			[loginWindowUserRegistrationLink setDelegate:self];
@@ -367,7 +363,6 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 	[mAPI release];
 	[mDB release];
 	[mDeliciousMenu release];
-	[nextTimeToAnnoy release];
 	
 	// Disconnect the datasource from the favorites NSTableView and free it.
 	[favoriteTagsTable setDataSource:nil];
@@ -1765,11 +1760,6 @@ static NSData* ExecuteCommand(NSString* command)
 
 @end
 
-
-static BOOL checkLicense(NSString *email, NSString *licenseKey)
-{	
-    return YES;
-}
 
 static void my_SCNetworkReachabilityCallBack(SCNetworkReachabilityRef target,
 											 SCNetworkConnectionFlags flags,

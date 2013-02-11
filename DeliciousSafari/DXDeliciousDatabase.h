@@ -57,12 +57,6 @@
 
 -(BOOL)isLoggedIn;
 
--(NSString*)registrationEmailAddress;
--(void)setRegistrationEmailAddress:(NSString*)emailAddress;
-
--(NSString*)registrationLicenseKey;
--(void)setRegistrationLicenseKey:(NSString*)licenseKey;
-
 #ifdef DELICIOUSSAFARI_PLUGIN_TARGET
 -(void)startFaviconUpdateThread:(NSObject <DXDeliciousDatabaseFaviconCallback>*)callbackObject;
 #endif
