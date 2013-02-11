@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface DXSafariBookmarkDataSource : NSObject {
+@interface DXSafariBookmarkDataSource : NSObject <NSOutlineViewDataSource> {
 	NSMutableDictionary *safariBookmarksDict;
 }
 

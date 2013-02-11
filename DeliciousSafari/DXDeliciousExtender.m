@@ -912,7 +912,7 @@ static NSData* ExecuteCommand(NSString* command)
 	[postURL setStringValue:url];
 	[postName setStringValue:title];
 	[postNotes setString:notes];
-	[postNotesCharactersUsed setStringValue:[NSString stringWithFormat:@"%d", [notes length]]];
+	[postNotesCharactersUsed setStringValue:[NSString stringWithFormat:@"%lu", (unsigned long)[notes length]]];
 	[postTags setObjectValue:tags];
 	[doNotShare setState:shouldShare ? NSOffState : NSOnState];
 	[postWindow makeFirstResponder:postTags];
@@ -1072,7 +1072,7 @@ static NSData* ExecuteCommand(NSString* command)
 {
 	if([aNotification object] == postNotes)
 	{		
-		[postNotesCharactersUsed setStringValue:[NSString stringWithFormat:@"%u", [[postNotes string] length]]];
+		[postNotesCharactersUsed setStringValue:[NSString stringWithFormat:@"%lu", (unsigned long)[[postNotes string] length]]];
 	}	
 }
 

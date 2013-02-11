@@ -9,17 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface DXFavoritesDataSource : NSObject {
+@interface DXFavoritesDataSource : NSObject <NSTableViewDataSource> {
 	NSMutableArray *records;
 }
 
 - (id)initWithTags:(NSArray*)tags;
-
-- (id)tableView:(NSTableView *)aTableView
-    objectValueForTableColumn:(NSTableColumn *)aTableColumn
-			row:(int)rowIndex;
-
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView;
 
 -(NSArray*)favorites;
 

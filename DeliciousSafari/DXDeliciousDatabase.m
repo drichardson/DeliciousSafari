@@ -1417,7 +1417,7 @@ bail:
 	
 	@try {
 		id <FDOCommand> tagQuery = [mDBConnection newCommand];
-		[tagQuery prepare:[NSString stringWithFormat:@"SELECT name_display FROM tag WHERE name_lower LIKE ?1 LIMIT %u", limit]];
+		[tagQuery prepare:[NSString stringWithFormat:@"SELECT name_display FROM tag WHERE name_lower LIKE ?1 LIMIT %lu", (unsigned long)limit]];
 		[tagQuery bindString:[searchString stringByAppendingString:@"%"] toParameterNumber:1];
 		id <FDORecordSet> recordSet = [tagQuery executeQuery];
 		
@@ -1441,7 +1441,7 @@ bail:
 	
 	@try {			
 		id <FDOCommand> bookmarkQuery = [mDBConnection newCommand];
-		[bookmarkQuery prepare:[NSString stringWithFormat:@"SELECT * FROM bookmark WHERE title LIKE ?1 LIMIT %u", limit]];
+		[bookmarkQuery prepare:[NSString stringWithFormat:@"SELECT * FROM bookmark WHERE title LIKE ?1 LIMIT %lu", (unsigned long)limit]];
 		[bookmarkQuery bindString:[NSString stringWithFormat:@"%%%@%%", searchString] toParameterNumber:1];
 		id <FDORecordSet> recordSet = [bookmarkQuery executeQuery];
 		result = [self postsArrayForRecordSet:recordSet];		

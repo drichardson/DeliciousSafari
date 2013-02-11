@@ -1077,7 +1077,7 @@ static NSDictionary* DXMakePostDictionary(NSString *href, NSString *description,
     // Log the problem.
     NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
-          [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 	
 	[mDelegate deliciousAPIConnectionFailedWithError:error];
 }

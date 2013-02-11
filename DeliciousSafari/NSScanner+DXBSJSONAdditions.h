@@ -58,7 +58,6 @@ extern NSString *dxJsonNullString;
 - (BOOL)dxScanJSONObjectEndString;
 - (BOOL)dxScanJSONArrayStartString;
 - (BOOL)dxScanJSONArrayEndString;
-- (BOOL)dxScanJSONArrayEndString;
 - (BOOL)dxScanJSONStringDelimiterString;
 
 @end
