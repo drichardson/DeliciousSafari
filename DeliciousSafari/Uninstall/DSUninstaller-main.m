@@ -50,6 +50,12 @@ static void removeFiles(NSArray* paths)
 	for(NSString *path in paths)
 	{
 		NSLog(@"Removing '%@'", path);
-		[fm removeFileAtPath:path handler:nil];
+        NSError* error = nil;
+        BOOL success = [fm removeItemAtPath:path error:&error];
+        if ( !success )
+        {
+            NSLog(@"Error removing %@. %@", path, error);
+        }
+        
 	}
 }
