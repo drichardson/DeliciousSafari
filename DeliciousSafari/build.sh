@@ -16,6 +16,8 @@
 # For the pre-built .DS_Store to work, the names of the files must
 # not change between builds.
 
+PACKAGEMAKER="`pwd`/BuildTools/PackageMaker-AuxToolsLateJuly2012.app/Contents/MacOS/PackageMaker"
+
 #
 # Get the short version number from the command line.
 #
@@ -46,13 +48,17 @@ fi
 #
 
 # Make sure Xcode isn't running before incrementing the version.
-ps auxww|grep -v grep|grep Xcode > /dev/null
-if [ "$?" = 0 ]; then
+ps -Ao comm|grep Xcode.app/Contents/MacOS/Xcode > /dev/null
+if [ "$?" == 0 ]; then
     echo Xcode is running. Quit Xcode before running build.sh as this script will modify the DeliciousSafari Xcode project.
     exit 1
 fi
 
-/Developer/usr/bin/agvtool next-version -all || exit 1
+xcrun agvtool next-version -all 
+if [ "$?" != 0 ]; then
+    echo "Couldn't find agvtool. Perhaps you need to install the Command Line Tools in Xcode."
+    exit 1
+fi
 
 
 DSTROOT=/tmp/DeliciousSafari.dst
@@ -93,7 +99,7 @@ echo Building Installer
 echo ------------------
 sudo mkdir -p "$INSTALLER_PATH" || exit 1
 pushd installer
-sudo /Developer/usr/bin/packagemaker -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
+sudo $PACKAGEMAKER -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
 popd
 
 #
