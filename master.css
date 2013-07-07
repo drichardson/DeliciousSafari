@@ -79,7 +79,7 @@ img {
     padding-left: 160px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-image: url('/images/package.png');
+    background-image: url('images/package.png');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 128px;
