@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<!--
+	
+	This page is an adaptation of Twitterific's bookmarklet guide, which is
+	an adaptation of Joe Maller's Bookmarklet Installation Guide:
+	
+	<http://iconfactory.com/___?>
+	<http://joemaller.com/___>
+	
+	(Make sure to check the source comments on those pages.)
+	
+	More about iTransmogrify here:
+	
+	<http://joemaller.com/2008/01/12/itransmogrify/>
+	
+-->
+
+	<title>Save to Delicious</title>
+
+	<style type="text/css" media="screen">
+
+		body {
+			margin: 0;
+			padding: 0;
+			width: 320px;
+			font-family: Helvetica, sans-serif;
+			font-size: 17px;
+			-webkit-text-size-adjust: none;
+			background-color: white;
+			}
+		#container {
+			margin: 0;
+			padding-bottom: 15px;
+			background-color: #c5ccd3;
+			border: 1px solid #c5ccd3; /* workaround for a WebKit rendering bug */
+			}
+		h1 {
+			font-size: 17px;
+			color: #4c566c;
+			margin: 15px 10px 8px 20px;
+			padding: 0;
+			}
+
+		ul {
+			margin: 0 10px;
+			padding: 0;
+			width: 296px;
+			background-color: white;
+			-webkit-border-radius: 8px;
+			border: 1px solid #d9d9d9;
+			}
+		li {
+			font-weight: bold;
+			list-style-type: none;
+			border-bottom: 1px solid #d9d9d9;
+			padding: 10px;
+			}
+		.secondary {
+			font-weight: normal;
+			}
+
+		div.group {
+			margin: 0 10px;
+			padding: 0;
+			width: 296px;
+			background-color: white;
+			-webkit-border-radius: 8px;
+			border: 1px solid #d9d9d9;
+			}
+		div.group p {
+			margin: 0;
+			font-weight: normal;
+			padding: 10px;
+			}
+		div.figure {
+			margin: 0;
+			padding: 5px 10px;
+			}
+
+	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.addEventListener("load", function(){window.scrollTo(0,1)});
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<h1>Bookmark Setup</h1>
+		<div class="group">
+			<p>
+				These step-by-step instructions show you how to add a bookmark that saves the current page in Safari to Delicious.
+			</p>
+		</div>
+	
+		<h1>Step 1: Bookmark This Page</h1>
+		<div class="group">
+			<p>
+				Tap the add button in the toolbar at the bottom of the screen, then select <strong>Add Bookmark</strong>.
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/add_bookmark.png" alt="add bookmark"/>
+			</div>
+			<p>
+				Take note of the name and bookmarks folder and then tap <strong>Save</strong>.
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/save_bookmark.png" alt="save bookmark" />
+			</div>
+		</div>
+
+		<h1>Step 2: Edit The Bookmark</h1>
+		<div class="group">
+			<p>
+				Tap the Bookmarks button in the toolbar at the bottom of the screen.
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/open_bookmarks.png" alt="open bookmarks"/>
+			</div>
+			<p>
+				Navigate through your bookmarks until you locate <em>Save to Delicious</em> in the list. Tap <strong>Edit</strong> to modify the list and then tap on the bookmark.
+			</p>
+			<p>
+				After the editing panel slides into view, tap in the second field (it begins with "http:"). You want to edit the beginning of this text, so tap and drag the loupe all the way to the left.
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/edit_bookmark_start.png" alt="edit bookmark start" />
+			</div>
+			<p>
+				Place the editing point between the "?" and the "j" then tap the delete key until the editing point is at the beginning of the line. When you are done, your bookmark should look like this:
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/edit_bookmark_finish.png" alt="edit bookmark finish" />
+			</div>
+		</div>
+
+		<h1>Step 3: Use The Bookmark</h1>
+		<div class="group">
+			<p>
+				The next time you find a web page you want to save to Delicious, open your bookmarks as before:
+			</p>
+			<div class="figure">
+				<img src="/images/bookmarklet/open_bookmarks.png" alt="open bookmarks"/>
+			</div>
+			<p>
+				Then tap on <strong>Save to Delicious</strong> to close Safari and open Bookmarks. The URL of the page with be ready to save.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
