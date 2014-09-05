@@ -1025,7 +1025,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This rule builds an 'aete' version of the sdef; it is only necessary for pre-Leopard builds.\n/usr/bin/sdp -fa -o \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.r\" \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.sdef\"";
+			shellScript = "/usr/bin/sdp -fa -o \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.r\" \"${SRCROOT}/Scripting Addition/DeliciousSafari Addition.sdef\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
