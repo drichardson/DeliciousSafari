@@ -231,14 +231,27 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 			
 			// The toolbar item should be displayed the first time this code is run. If the user removes
 			// the toolbar button, it should not be readded.
-			NSString *kSafariToolbarConfigDictionaryKey = @"NSToolbar Configuration SafariToolbarIdentifier";
+            
+            
 			NSString *kSafariToolbarItemIdentifiersArrayKey = @"TB Item Identifiers";
 			NSString *kAddPostToolbarItemIdentifier = @"DXAddPostToolbarItemIdentifier";
 			if(![mDB hasAddedToolbarItemIdentifier:kAddPostToolbarItemIdentifier])
-			{				
-				// The toolbar item has not been added, so add it for discoverability.
-				NSMutableDictionary *toolbarConfigDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:kSafariToolbarConfigDictionaryKey];
-				toolbarConfigDictionary = [[toolbarConfigDictionary mutableCopy] autorelease];
+			{
+                // The toolbar item has not been added, so add it for discoverability.
+                
+                // Different versions of Safari store the toolbar under different identifiers.
+                // Look for the newest one first and then fallback to the old.
+                NSString *kSafariToolbarConfigDictionaryKeyOld = @"NSToolbar Configuration SafariToolbarIdentifier";
+                NSString *kSafariToolbarConfigDictionaryKeyNew = @"NSToolbar Configuration BrowserToolbarIdentifier";
+                NSString *kSafariToolbarConfigDictionaryKey = kSafariToolbarConfigDictionaryKeyNew;
+                
+				
+				NSMutableDictionary *toolbarConfigDictionary = [[[[NSUserDefaults standardUserDefaults] objectForKey:kSafariToolbarConfigDictionaryKey] mutableCopy] autorelease];
+                if (toolbarConfigDictionary == nil) {
+                    // fall back to the older identifier
+                    kSafariToolbarConfigDictionaryKey = kSafariToolbarConfigDictionaryKeyOld;
+                    toolbarConfigDictionary = [[[[NSUserDefaults standardUserDefaults] objectForKey:kSafariToolbarConfigDictionaryKey] mutableCopy] autorelease];
+                }
 				
 				if([toolbarConfigDictionary isKindOfClass:[NSDictionary class]])
 				{
