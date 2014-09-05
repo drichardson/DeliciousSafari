@@ -933,7 +933,7 @@ bail:
 			
 			[strError release]; // Docs say you own this (unlike NSError in dataWithContentsOfFile:options:error: call above), so release it.
 			
-			if(mDBCache != nil && [mDBCache isKindOfClass:[NSDictionary dictionary]])
+			if(mDBCache != nil && ![mDBCache isKindOfClass:[NSDictionary class]])
 				mDBCache = nil;
 			
 			[mDBCache retain];
