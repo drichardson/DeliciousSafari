@@ -12,7 +12,7 @@
 
 static DXToolbarController* dxToolbarController = nil;
 
-static NSString *kDXSafariBrowserWindowToolbarConfigurationKey = @"values.NSToolbar Configuration BrowserWindowToolbarIdentifier";
+static NSString *kDXSafariBrowserWindowToolbarConfigurationKey = @"values.NSToolbar Configuration BrowserToolbarIdentifier";
 
 static NSToolbarItem*
 dxToolbarItemForItemIdentifierWillBeInsertedIntoToolbar(id self, SEL _cmd, NSToolbar* toolbar, NSString* itemIdentifier, BOOL flag);
@@ -21,6 +21,8 @@ static NSArray*
 dxToolbarAllowedItemIdentifiers(id self, SEL _cmd, NSToolbar* toolbar);
 
 static NSString* MakeToolbarItemPositionKey(NSToolbarItem* toolbarItem);
+
+static NSString* dxToolbarConfigChangedObserverContext = nil;
 
 @interface DXToolbarController (private)
 -(NSArray*)itemIdentifiers;
@@ -91,7 +93,7 @@ static NSString* MakeToolbarItemPositionKey(NSToolbarItem* toolbarItem);
 		[[NSUserDefaultsController sharedUserDefaultsController] addObserver:self
 																  forKeyPath:kDXSafariBrowserWindowToolbarConfigurationKey
 																	 options:NSKeyValueObservingOptionNew
-																	 context:nil];
+																	 context:&dxToolbarConfigChangedObserverContext];
 	}
 	
 	return self;
@@ -201,15 +203,20 @@ static NSString* MakeToolbarItemPositionKey(NSToolbarItem* toolbarItem);
 {
 	//static int x; // The changing x makes sure this shows up in console so syslog doesn't collapse it into "Previous message repeated x times...".
 	//NSLog(@"Observed change: %@, %@, %d", keyPath, change, ++x);
-	
-	// Update the toolbar item positions in user defaults
-	for(NSString *itemKey in mItemsDictionary)
-	{
-		NSToolbarItem *item = [mItemsDictionary objectForKey:itemKey];
-		NSUInteger index = [[mBrowserWindowToolbar items] indexOfObject:item];
-		NSNumber *position = [NSNumber numberWithInteger:(index == NSNotFound) ? -1 : (NSInteger)index];
-		[[NSUserDefaults standardUserDefaults] setObject:position forKey:MakeToolbarItemPositionKey(item)];
-	}
+    
+    if (context == &dxToolbarConfigChangedObserverContext)
+    {
+        // Update the toolbar item positions in user defaults
+        for(NSString *itemKey in mItemsDictionary)
+        {
+            NSToolbarItem *item = [mItemsDictionary objectForKey:itemKey];
+            NSUInteger index = [[mBrowserWindowToolbar items] indexOfObject:item];
+            NSNumber *position = [NSNumber numberWithInteger:(index == NSNotFound) ? -1 : (NSInteger)index];
+            [[NSUserDefaults standardUserDefaults] setObject:position forKey:MakeToolbarItemPositionKey(item)];
+        }
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
 }
 
 @end
