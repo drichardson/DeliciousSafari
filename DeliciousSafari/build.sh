@@ -16,8 +16,6 @@
 # For the pre-built .DS_Store to work, the names of the files must
 # not change between builds.
 
-PACKAGEMAKER="`pwd`/BuildTools/PackageMaker-AuxToolsLateJuly2012.app/Contents/MacOS/PackageMaker"
-
 #
 # Get the short version number from the command line.
 #
