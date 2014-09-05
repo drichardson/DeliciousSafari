@@ -111,10 +111,15 @@ echo Building Installer
 echo ------------------
 sudo mkdir -p "$INSTALLER_PATH" || exit 1
 pushd installer
-#sudo $PACKAGEMAKER -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
-#sudo productbuild --product "$SRCROOT/installer/requirements.plist" --root "$DSTROOT" "$INSTALLER" || exit 1
 # TODO: remove sudos in this script. I don't think you need them anymore.
-sudo pkgbuild --identifier "com.delicioussafari.DSInstaller" --scripts "$SRCROOT/installer/scripts" --root "$DSTROOT" "$INSTALLER" || exit 1
+echo "Runing pkgbuild. Note you must be connected to Internet for this to work as it"
+echo "has to contact a time server in order to generate a trusted timestamp. See"
+echo "man pkgbuild for more info under SIGNED PACKAGES."
+sudo pkgbuild --identifier "com.delicioussafari.DSInstaller" \
+    --scripts "$SRCROOT/installer/scripts" \
+    --sign "Developer ID Installer: Douglas Richardson (4L84QT8KA9)" \
+    --root "$DSTROOT" \
+    "$INSTALLER" || exit 1
 popd
 
 #
