@@ -29,6 +29,7 @@
 	NSImage *toolbarItemImage;
 	SEL afterLoginCallback;
 	NSBundle *deliciousSafariBundle;
+    NSArray* deliciousSafariBundleTopLevelObjects;
 	
 	DXTagMenuController *mAllTagsController;
 	DXTagMenuController *mFavoriteTagsController;

@@ -8,11 +8,6 @@
 
 #import "DXUtilities.h"
 
-#ifdef DELICIOUSSAFARI_PLUGIN_TARGET
-#import <CoreServices/CoreServices.h>
-//#import <dlfcn.h>
-#endif
-
 const int kDXMaxMenuTitleLength = 60; // Safari history seems to use 60.
 
 static NSBundle *gDXBundle = nil;
@@ -196,21 +191,6 @@ bail:
 	
 bail:
 	return result;
-}
-#endif
-
-#ifdef DELICIOUSSAFARI_PLUGIN_TARGET
--(BOOL)isLeopardOrLater
-{
-	SInt32 macVersion;
-	if (Gestalt(gestaltSystemVersion, &macVersion) != noErr)
-	{
-		// Assume Tiger on failure. This really shouldn't happen.
-		macVersion = 0x1040;
-		NSLog(@"ERROR: Gestalt failed to return the OS version. Assuming Tiger.");
-	}
-	
-	return macVersion >= 0x1050;
 }
 #endif
 

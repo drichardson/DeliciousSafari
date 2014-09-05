@@ -150,8 +150,38 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 {
 	if([super init])
 	{
-		if([NSBundle loadNibNamed:@"DXExtenderResources" owner:self])
+        deliciousSafariBundle = [[NSBundle bundleWithIdentifier:@"com.delicioussafari.DeliciousSafari"] retain];
+        
+        id shortVersion = @"0.9"; // Never used. If this ever occurs, there is some sort of problem.
+        id bundleVersion = @"000";
+        deliciousSafariBundle = [[NSBundle bundleWithIdentifier:@"com.delicioussafari.DeliciousSafari"] retain];
+        if(deliciousSafariBundle)
+        {
+            // Get image resources for the menus.
+            NSString* path = [deliciousSafariBundle pathForImageResource:@"url"];
+            if(path)
+                urlImage = [[NSImage alloc] initWithContentsOfFile:path];
+            
+            path = [deliciousSafariBundle pathForImageResource:@"toolbaritem"];
+            if(path)
+                toolbarItemImage = [[NSImage alloc] initWithContentsOfFile:path];
+            
+            // Get the version number from the Info.plist file.
+            id tmpBundleVersion = [deliciousSafariBundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+            if(tmpBundleVersion != nil)
+                bundleVersion = tmpBundleVersion;
+            
+            // Get the build number from the Info.plist file.
+            id tmpShortVersion = [deliciousSafariBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+            if(tmpShortVersion != nil)
+                shortVersion = tmpShortVersion;
+        }
+        
+        if ([deliciousSafariBundle loadNibNamed:@"DXExtenderResources" owner:self topLevelObjects:&deliciousSafariBundleTopLevelObjects])
 		{
+            // prevent top level objects from deallocating.
+            [deliciousSafariBundleTopLevelObjects retain];
+            
 			mCurrentSheet = nil;
 			mIsDeliciousMenuAdded = NO;
 			
@@ -167,53 +197,24 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 			// NSTableView maintains a weak reference to its data source, so don't autorelease it.
 			favoritesDataSource = [[DXFavoritesDataSource alloc] initWithTags:[mDB favoriteTags]];
 			[favoriteTagsTable setDataSource:favoritesDataSource];
+            
+            
+            NSString *versionFormat = DXLocalizedString(@"Version %@ (%@)",
+                                                        @"Version number format string. First argument is short version and second is bundle version.");
+            [aboutWindowVersion setStringValue:[NSString stringWithFormat:versionFormat, shortVersion, bundleVersion]];
+            
 			
-	
-			id shortVersion = @"0.9"; // Never used. If this ever occurs, there is some sort of problem.
-			id bundleVersion = @"000";
-			deliciousSafariBundle = [[NSBundle bundleWithIdentifier:@"com.delicioussafari.DeliciousSafari"] retain];
-			if(deliciousSafariBundle)
-			{
-				// Get image resources for the menus.				
-				NSString* path = [deliciousSafariBundle pathForImageResource:@"url"];
-				if(path)
-					urlImage = [[NSImage alloc] initWithContentsOfFile:path];
-				
-				path = [deliciousSafariBundle pathForImageResource:@"toolbaritem"];
-				if(path)
-					toolbarItemImage = [[NSImage alloc] initWithContentsOfFile:path];
-								
-				// Get the version number from the Info.plist file.
-				id tmpBundleVersion = [deliciousSafariBundle objectForInfoDictionaryKey:@"CFBundleVersion"];
-				if(tmpBundleVersion != nil)
-					bundleVersion = tmpBundleVersion;
-				
-				// Get the build number from the Info.plist file.
-				id tmpShortVersion = [deliciousSafariBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-				if(tmpShortVersion != nil)
-					shortVersion = tmpShortVersion;
-				
-				NSString *versionFormat = DXLocalizedString(@"Version %@ (%@)",
-															@"Version number format string. First argument is short version and second is bundle version.");
-				[aboutWindowVersion setStringValue:[NSString stringWithFormat:versionFormat, shortVersion, bundleVersion]];
-			}
-			
-			if([[DXUtilities defaultUtilities] isLeopardOrLater])
-			{
-				// Only do this on Leopard and later. For unknown reasons, using this icon when the user is not logged in
-				// to DeliciousSafari causes graphic corruption in the menu's image (the graphic looks like a U instead of a folder).
-				NSBundle *coreTypesBundle = [NSBundle bundleWithPath:@"/System/Library/CoreServices/CoreTypes.bundle"];
-				
-				if(coreTypesBundle != nil)
-				{
-					NSString *path = [coreTypesBundle pathForImageResource:@"GenericFolderIcon"];
-					if(path)
-					{
-						folderImage = [[NSImage alloc] initWithContentsOfFile:path];
-						[folderImage setSize:NSMakeSize(16, 16)];
-					}
-				}
-			}
+            NSBundle *coreTypesBundle = [NSBundle bundleWithPath:@"/System/Library/CoreServices/CoreTypes.bundle"];
+            
+            if(coreTypesBundle != nil)
+            {
+                NSString *path = [coreTypesBundle pathForImageResource:@"GenericFolderIcon"];
+                if(path)
+                {
+                    folderImage = [[NSImage alloc] initWithContentsOfFile:path];
+                    [folderImage setSize:NSMakeSize(16, 16)];
+                }
+            }
 			
 			if(folderImage == nil)
 			{
@@ -389,6 +390,7 @@ static const unsigned kMaxExtendedDescriptionLength = 1000;
 	[self setSavedLastUpdatedTime:nil];
 	
 	[deliciousSafariBundle release];
+    [deliciousSafariBundleTopLevelObjects release];
 	
 	[itemsToImport release];
 	[self setImportTagsToAdd:nil];

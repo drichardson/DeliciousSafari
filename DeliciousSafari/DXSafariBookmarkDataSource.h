@@ -10,7 +10,7 @@
 
 
 @interface DXSafariBookmarkDataSource : NSObject <NSOutlineViewDataSource> {
-	NSMutableDictionary *safariBookmarksDict;
+	NSDictionary *safariBookmarksDict;
 }
 
 -(NSString*)titleForItem:(id)item;

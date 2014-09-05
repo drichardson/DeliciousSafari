@@ -229,16 +229,7 @@ dxToolbarItemForItemIdentifierWillBeInsertedIntoToolbar(id self, SEL _cmd, NSToo
 {
 	NSToolbarItem *result = [dxToolbarController itemForIdentifier:itemIdentifier];
 		
-	if(result != nil)
-	{
-		// On Tiger, if a copy of the toolbar item is not made then our toolbar item will get destroyed if the following happens:
-		// 1. A second Safari window is created (an ignored exception will actually occur here)
-		// 2. A Safari window is closed.
-		// RESULT: The remaining Safari windows lose their DeliciousSafari toolbar button and Command keys stop working.
-		if(![[DXUtilities defaultUtilities] isLeopardOrLater])
-			result = [[result copy] autorelease];
-	}
-	else
+	if(result == nil)
 		result = [self dxToolbar:toolbar itemForItemIdentifier:itemIdentifier willBeInsertedIntoToolbar:flag];
 	
 	return result;

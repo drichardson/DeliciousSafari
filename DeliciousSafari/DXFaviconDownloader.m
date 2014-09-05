@@ -39,7 +39,8 @@ static NSData* FaviconDataFromURL(NSURL* url);
 			if(mRunningThreadCount > kMaxThreadsToStart)
 				mRunningThreadCount = kMaxThreadsToStart;
 			
-			if(MPCreateSemaphore(mRunningThreadCount, 0, &mThreadWaitSemaphore) != noErr)
+            mThreadWaitSemaphore = dispatch_semaphore_create(0);
+			if(mThreadWaitSemaphore == NULL)
 			{
 				NSLog(@"Error creating semaphore for favicon download thread pool.");
 				[self release];
@@ -73,7 +74,7 @@ static NSData* FaviconDataFromURL(NSURL* url);
 	[mFaviconResults release];
 	[mFaviconFailures release];
 	[mFaviconDatabase release];
-	MPDeleteSemaphore(mThreadWaitSemaphore);
+    dispatch_release(mThreadWaitSemaphore);
 	[super dealloc];
 }
 
@@ -132,7 +133,7 @@ static NSData* FaviconDataFromURL(NSURL* url);
 	}
 	
 	//NSLog(@"Exiting thread about to signal semaphore");
-	MPSignalSemaphore(mThreadWaitSemaphore);
+    dispatch_semaphore_signal(mThreadWaitSemaphore);
 	
 	[pool release];
 }
@@ -142,7 +143,7 @@ static NSData* FaviconDataFromURL(NSURL* url);
 	// Block until threads are done processing.
 	while(mRunningThreadCount > 0)
 	{
-		MPWaitOnSemaphore(mThreadWaitSemaphore, kDurationForever);
+        dispatch_semaphore_wait(mThreadWaitSemaphore, DISPATCH_TIME_FOREVER);
 		mRunningThreadCount--;
 		//NSLog(@"Got %d left", mRunningThreadCount);
 	}
@@ -199,7 +200,7 @@ static CGImageRef ResizeFaviconToStandardSize(CGImageRef faviconImageRef)
 									   kBitsPerComponent,
 									   standardRect.size.width * kBytesPerPixel,
 									   rgbRef,
-									   kCGImageAlphaPremultipliedLast);
+									   kCGBitmapAlphaInfoMask & kCGImageAlphaPremultipliedLast);
 	if(contextRef == NULL)
 		goto bail;
 	
