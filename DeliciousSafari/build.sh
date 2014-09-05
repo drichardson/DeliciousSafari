@@ -112,7 +112,9 @@ echo ------------------
 sudo mkdir -p "$INSTALLER_PATH" || exit 1
 pushd installer
 #sudo $PACKAGEMAKER -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
-sudo productbuild --product "$SRCROOT/installer/requirements.plist" --root "$DSTROOT" "$INSTALLER" || exit 1
+#sudo productbuild --product "$SRCROOT/installer/requirements.plist" --root "$DSTROOT" "$INSTALLER" || exit 1
+# TODO: remove sudos in this script. I don't think you need them anymore.
+sudo pkgbuild --identifier "com.delicioussafari.DSInstaller" --scripts "$SRCROOT/installer/scripts" --root "$DSTROOT" "$INSTALLER" || exit 1
 popd
 
 #
