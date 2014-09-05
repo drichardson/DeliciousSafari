@@ -329,6 +329,7 @@
 		91BCDE8E104F73BC005F99B2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		91BCDE92104F73C4005F99B2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		91BF33710C9375EF00917983 /* small-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-logo.png"; sourceTree = "<group>"; };
+		91C1D33C19BA682000D4E740 /* requirements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = requirements.plist; path = installer/requirements.plist; sourceTree = "<group>"; };
 		91C627AB0DBD988C00864591 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		91D835FA0DDD364E006989A2 /* NSString+DXTruncatedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DXTruncatedStrings.h"; sourceTree = "<group>"; };
 		91D835FB0DDD364E006989A2 /* NSString+DXTruncatedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DXTruncatedStrings.m"; sourceTree = "<group>"; };
@@ -429,6 +430,7 @@
 				91449C871049FA0D00F3DD5C /* Agent */,
 				08FB77AFFE84173DC02AAC07 /* Plugin */,
 				91189283104AE26E0012655A /* Scripting Addition */,
+				91C1D33F19BA68B700D4E740 /* Installer */,
 				916695CF104E22AA0066F5EC /* Uninstall */,
 				91DD694A0C60436D002C8D34 /* DeliciousAPITester */,
 				919EEDE513E902620098F974 /* ASHelper */,
@@ -658,6 +660,14 @@
 				919EEDE613E902620098F974 /* main.m */,
 			);
 			path = ASHelper;
+			sourceTree = "<group>";
+		};
+		91C1D33F19BA68B700D4E740 /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				91C1D33C19BA682000D4E740 /* requirements.plist */,
+			);
+			name = Installer;
 			sourceTree = "<group>";
 		};
 		91DD693F0C604346002C8D34 /* Classes */ = {

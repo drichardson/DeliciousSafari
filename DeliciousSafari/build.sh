@@ -92,12 +92,27 @@ popd
 #
 # Make installer
 #
+echo ----------
+echo Fixup Root
+echo ----------
+
+# Get rid of everything in /usr/local like ASHelper. Don't do everything automatically, otherwise
+# you might slightly delete something you need.
+DSTLOCAL="$DSTROOT/usr/local/bin"
+sudo rm "$DSTLOCAL/ASHelper" || exit 1
+sudo rm "$DSTLOCAL/DSUninstaller" || exit 1
+sudo rmdir "$DSTROOT/usr/local/bin/" || exit 1
+sudo rmdir "$DSTROOT/usr/local" || exit 1
+sudo rmdir "$DSTROOT/usr" || exit 1
+
+
 echo ------------------
 echo Building Installer
 echo ------------------
 sudo mkdir -p "$INSTALLER_PATH" || exit 1
 pushd installer
-sudo $PACKAGEMAKER -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
+#sudo $PACKAGEMAKER -i com.delicioussafari --doc DeliciousSafari.pmdoc --no-recommend --out "$INSTALLER_PATH/DeliciousSafari.pkg" --verbose || exit 1
+sudo productbuild --product "$SRCROOT/installer/requirements.plist" --root "$DSTROOT" "$INSTALLER" || exit 1
 popd
 
 #
