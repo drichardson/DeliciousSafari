@@ -636,6 +636,9 @@ bail:
 		}
 		@catch(NSException *e)
 		{
+            // I've seen some failures here when delicious gives me two bookmarks with the same URL.
+            // delicious.com doesn't let you create 2 links with the same URL, so I'm not sure
+            // how this happened. See the cocos2d bookmark under mofochickamo's account to see what I mean.
 			NSLog(@"[DXDeliciousDatabase addPostsToDatabaseInternal:] - Insert bookmark failed %@", e);
 			continue;
 		}
