@@ -1222,8 +1222,6 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_GROUP = wheel;
-				INSTALL_OWNER = root;
 				INSTALL_PATH = /Library/InputManagers/DeliciousSafari;
 				PRODUCT_NAME = DeliciousSafari;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1252,8 +1250,6 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_GROUP = wheel;
-				INSTALL_OWNER = root;
 				INSTALL_PATH = /Library/InputManagers/DeliciousSafari;
 				PRODUCT_NAME = DeliciousSafari;
 				VERSIONING_SYSTEM = "apple-generic";
