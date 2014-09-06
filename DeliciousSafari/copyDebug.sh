@@ -2,10 +2,10 @@
 
 set -e
 
-DS_BUILT_BUNDLE_CONTENTS=DerivedData/DeliciousSafari/Build/Products/Debug/DeliciousSafari.bundle/Contents
-DS_DST_CONTENTS=/Library/InputManagers/DeliciousSafari/DeliciousSafari.bundle/Contents
+SRC=DerivedData/DeliciousSafari/Build/Products/Debug/DeliciousSafari.bundle
+DST_FOLDER=/Library/InputManagers/DeliciousSafari
 
-sudo cp $DS_BUILT_BUNDLE_CONTENTS/MacOS/DeliciousSafari $DS_DST_CONTENTS/MacOS/DeliciousSafari
-sudo cp -R $DS_BUILT_BUNDLE_CONTENTS/Resources/*.nib $DS_DST_CONTENTS/Resources
+sudo rm -rf "$DST_FOLDER/DeliciousSafari.bundle"
+sudo cp -R "$SRC" "$DST_FOLDER"
 
 echo OK
