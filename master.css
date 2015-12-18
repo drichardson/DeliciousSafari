@@ -23,13 +23,12 @@ img {
 #canvas {
 	margin-left: auto;
 	margin-right:auto;
-	width: 550px;
+	max-width: 550px;
 	font-family: serif;
 }
 
 #content-body {
 	padding: 18px 0 18px 0;
-	margin: 0 30px;
 }
 
 #banner-text {
@@ -40,7 +39,12 @@ img {
 	position: relative;
 	top: 7px;
 	font-size: 47pt;
-	line-height: 47pt;
+}
+
+@media screen and (max-width: 390px) {
+    #title {
+        font-size: 30pt;
+    }
 }
 
 #sub-title {
